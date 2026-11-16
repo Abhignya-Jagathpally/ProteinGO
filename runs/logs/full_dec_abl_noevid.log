@@ -1,0 +1,32 @@
+[decB 06:13:23 +     0s] run dec_abl_noevid: decoder google/flan-t5-small; constrained True; evidence False; copy bias False; def init True; IA weight True; soft prompt True
+[decB 06:13:24 +     1s] spaces: ['enc_lora35m_f0', 'enc_lora35m_f1']; latents (152915, 16, 512); evidence keys ['fr24p_q', 'test_q', 'train_q', 'tv_q', 'val_q']
+W1116 06:13:28.561000 1602813 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1116 06:13:28.592000 1602813 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+Loading weights:   0%|          | 0/190 [00:00<?, ?it/s]Loading weights: 100%|██████████| 190/190 [00:00<00:00, 9326.46it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+[decB 06:13:32 +     9s] definition-text init of 7,901 GO tokens; e.g. GO:0110165 <- 'cellular anatomical entity cellular anatomical entity A part of a cellular organ'
+[decB 06:13:32 +     9s] tokenizer 40,035 tokens; trainable params 69.1M (T5 64.6M)
+[decB 06:13:56 +    33s] reference leaves built in 25s
+[decB 06:14:01 +    38s] instruction sets built in 5s: {('train', 0): 56551, ('tv', 0): 7566, ('val', 0): 13305, ('test', 0): 8630, ('fr24p', 0): 11231, ('train', 1): 56432, ('tv', 1): 7566, ('val', 1): 13305, ('test', 1): 8630, ('fr24p', 1): 11231}
+[decB 06:14:01 +    38s] sample source (MF, protein A0A8I5ZXR3, 31 tokens + 16 soft): Instruction: list the molecular function GO terms of this protein. Organism: Rattus norvegicus. Evidence:<nb></s>
+[decB 06:14:01 +    38s] BP source length p50 29 p99 35 max 53
+[decB 06:14:01 +    39s] namespace F: 1,099 terms; roots 22; mean in-vocab ancestors 4.8
+[decB 06:14:01 +    39s] namespace P: 5,960 terms; roots 18; mean in-vocab ancestors 11.7
+[decB 06:14:02 +    39s] namespace C: 842 terms; roots 3; mean in-vocab ancestors 8.8
+[decB 06:14:02 +    39s] shift weights: train top-1 p50 0.674 vs TV 0.975; weight p10/p50/p90 [0.26, 0.29, 2.81]; effective sample size 109,746 of 213,115
+[decB 06:14:02 +    39s] training examples 213,115 (F 64,688 P 71,872 C 76,555)
+[decB 06:14:02 +    39s] sample target (F, A0A8I5ZXR3): [np.str_('GO:0005488'), np.str_('GO:0003682'), np.str_('GO:1990841')] ... (len 3); vote nnz 39
+/home/aj0486@students.ad.unt.edu/PFA/tracego/tracego/train/train_decoder.py:396: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:822.)
+  tot["next"] += float(l_next) * len(bx)
+[decB 06:14:42 +    79s] ep 0 step 500/4458 next 9.1396 member 0.4060 lr 4.85e-04
+[decB 06:15:19 +   116s] ep 0 step 1000/4458 next 6.1106 member 0.3807 lr 4.40e-04
+[decB 06:15:58 +   156s] ep 0 step 1500/4458 next 4.9961 member 0.3654 lr 3.73e-04
+[decB 06:16:38 +   195s] ep 0 step 2000/4458 next 4.3889 member 0.3552 lr 2.90e-04
+[decB 06:19:21 +   358s] epoch 0: loss next 4.1927 member 0.3514; train 170s eval 147s; TV v2 (vocab terms) step0: MF 0.4049 BP 0.2428 CC 0.4256 mean 0.3578 test-like 0.3462
+[decB 06:19:42 +   380s] ep 1 step 2500/4458 next 2.3892 member 0.3149 lr 2.03e-04
+[decB 06:20:20 +   417s] ep 1 step 3000/4458 next 2.2963 member 0.3145 lr 1.21e-04
+[decB 06:21:00 +   457s] ep 1 step 3500/4458 next 2.2787 member 0.3120 lr 5.48e-05
+[decB 06:21:41 +   498s] ep 1 step 4000/4458 next 2.2709 member 0.3109 lr 1.29e-05
+[decB 06:22:46 +   563s] epoch 1: loss next 2.2633 member 0.3098; train 174s eval 31s; TV v2 (vocab terms) step0: MF 0.4231 BP 0.2492 CC 0.4556 mean 0.3760 test-like 0.3667
+[decB 06:22:47 +   564s] saved epoch 1 (TV v2 step0 test-like 0.3667) -> /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/full/dec_abl_noevid; total 564s

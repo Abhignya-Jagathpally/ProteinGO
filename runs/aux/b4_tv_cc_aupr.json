@@ -1,0 +1,148 @@
+{
+ "per_location": [
+  {
+   "location": "Cytoplasm",
+   "go": "GO:0005737",
+   "n_pos": 2703,
+   "prevalence": 0.35725614591593974,
+   "AUPR": 0.43828970407176115,
+   "AUPR_minus_prev": 0.08103355815582142
+  },
+  {
+   "location": "Nucleus",
+   "go": "GO:0005634",
+   "n_pos": 1779,
+   "prevalence": 0.23513084853291039,
+   "AUPR": 0.45899544225009203,
+   "AUPR_minus_prev": 0.22386459371718165
+  },
+  {
+   "location": "Extracellular",
+   "go": "GO:0005576",
+   "n_pos": 453,
+   "prevalence": 0.059873116574147504,
+   "AUPR": 0.21975776503198438,
+   "AUPR_minus_prev": 0.15988464845783687
+  },
+  {
+   "location": "Cell membrane",
+   "go": "GO:0005886",
+   "n_pos": 932,
+   "prevalence": 0.1231826592651335,
+   "AUPR": 0.34855104769630635,
+   "AUPR_minus_prev": 0.22536838843117285
+  },
+  {
+   "location": "Mitochondrion",
+   "go": "GO:0005739",
+   "n_pos": 450,
+   "prevalence": 0.05947660586835844,
+   "AUPR": 0.40531768493681736,
+   "AUPR_minus_prev": 0.3458410790684589
+  },
+  {
+   "location": "Plastid",
+   "go": "GO:0009536",
+   "n_pos": 92,
+   "prevalence": 0.012159661644197727,
+   "AUPR": 0.35310352536511797,
+   "AUPR_minus_prev": 0.3409438637209202
+  },
+  {
+   "location": "Endoplasmic reticulum",
+   "go": "GO:0005783",
+   "n_pos": 265,
+   "prevalence": 0.035025112344699974,
+   "AUPR": 0.211338761198335,
+   "AUPR_minus_prev": 0.17631364885363504
+  },
+  {
+   "location": "Lysosome/Vacuole",
+   "go": "GO:0005773",
+   "n_pos": 172,
+   "prevalence": 0.022733280465239227,
+   "AUPR": 0.07989858468892543,
+   "AUPR_minus_prev": 0.057165304223686195
+  },
+  {
+   "location": "Golgi apparatus",
+   "go": "GO:0005794",
+   "n_pos": 267,
+   "prevalence": 0.03528945281522601,
+   "AUPR": 0.20544450756231708,
+   "AUPR_minus_prev": 0.17015505474709108
+  },
+  {
+   "location": "Peroxisome",
+   "go": "GO:0005777",
+   "n_pos": 47,
+   "prevalence": 0.006212001057361882,
+   "AUPR": 0.11505821258365088,
+   "AUPR_minus_prev": 0.108846211526289
+  }
+ ],
+ "overlap_deeploc": 985,
+ "n_tv": 7566,
+ "heldout_of_deeploc": [
+  {
+   "location": "Cytoplasm",
+   "go": "GO:0005737",
+   "n_pos": 2138,
+   "AUPR": 0.3996251510332117
+  },
+  {
+   "location": "Nucleus",
+   "go": "GO:0005634",
+   "n_pos": 1401,
+   "AUPR": 0.4244979198496316
+  },
+  {
+   "location": "Extracellular",
+   "go": "GO:0005576",
+   "n_pos": 311,
+   "AUPR": 0.20787709668087892
+  },
+  {
+   "location": "Cell membrane",
+   "go": "GO:0005886",
+   "n_pos": 706,
+   "AUPR": 0.304893314953688
+  },
+  {
+   "location": "Mitochondrion",
+   "go": "GO:0005739",
+   "n_pos": 348,
+   "AUPR": 0.38548590758972606
+  },
+  {
+   "location": "Plastid",
+   "go": "GO:0009536",
+   "n_pos": 64,
+   "AUPR": 0.33018063664983
+  },
+  {
+   "location": "Endoplasmic reticulum",
+   "go": "GO:0005783",
+   "n_pos": 189,
+   "AUPR": 0.17750056024219138
+  },
+  {
+   "location": "Lysosome/Vacuole",
+   "go": "GO:0005773",
+   "n_pos": 114,
+   "AUPR": 0.06738608405764002
+  },
+  {
+   "location": "Golgi apparatus",
+   "go": "GO:0005794",
+   "n_pos": 199,
+   "AUPR": 0.2093742355247766
+  },
+  {
+   "location": "Peroxisome",
+   "go": "GO:0005777",
+   "n_pos": 32,
+   "AUPR": 0.13750988615605558
+  }
+ ]
+}

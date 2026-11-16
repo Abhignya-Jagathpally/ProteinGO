@@ -1,0 +1,17 @@
+W1116 05:00:04.074000 1564933 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1116 05:00:04.105000 1564933 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+Loading weights:   0%|          | 0/198 [00:00<?, ?it/s]Loading weights: 100%|██████████| 198/198 [00:00<00:00, 11942.88it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t12_35M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[codes 05:00:04 +     6s] 152,915 proteins; layer 8 -> PCA 64
+[codes 05:00:05 +     7s] PCA fit on 10,539 residues of the first (shortest-length) batch
+[codes 05:04:44 +   285s] codes (73491823, 64) float16 (9.41 GB) in 285s -> /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/full/codes_l8_d64.npz; sample protein A0A8I5ZXR3 first residue [-0.06836 -0.1869   0.2456   0.023  ]

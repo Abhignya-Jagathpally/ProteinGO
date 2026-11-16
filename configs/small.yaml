@@ -1,0 +1,12 @@
+# Smoke config. The 10-20k kinase run uses the same keys with a larger split file.
+seed: 7
+esm_name: facebook/esm2_t6_8M_UR50D
+max_length: 128
+hidden_fallback: 320
+n_labels: 4
+train_steps: 5
+max_term_frequency: 0.9
+min_term_count: 1
+lr: 0.001
+smoke_n: 4
+device: auto

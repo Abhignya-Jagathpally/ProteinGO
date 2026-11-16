@@ -1,0 +1,13 @@
+[sites 07:33:19 +     0s] TV v2 queries 7,566; querying UniProt REST for active / binding sites
+[sites 07:33:20 +     1s] fetched 100/7,566 accessions; with features 25
+[sites 07:33:29 +    10s] fetched 1,100/7,566 accessions; with features 282
+[sites 07:33:38 +    19s] fetched 2,100/7,566 accessions; with features 556
+[sites 07:33:47 +    29s] fetched 3,100/7,566 accessions; with features 814
+[sites 07:33:57 +    38s] fetched 4,100/7,566 accessions; with features 1,062
+[sites 07:34:06 +    47s] fetched 5,100/7,566 accessions; with features 1,307
+[sites 07:34:15 +    56s] fetched 6,100/7,566 accessions; with features 1,564
+[sites 07:34:24 +    66s] fetched 7,100/7,566 accessions; with features 1,799
+[sites 07:34:29 +    70s] done in 70s: returned 7,244; no site features 5,320; sequence changed 62; kept 1,862 (with active site 924)
+[sites 07:34:29 +    70s] top ligands: [('ATP', 454), ('Zn(2+)', 248), ('Mg(2+)', 183), ('substrate', 160), ('GTP', 134), ('Ca(2+)', 105), ('NAD(+)', 60), ('Mn(2+)', 51), ('S-adenosyl-L-methionine', 47), ('a divalent metal cation', 41), ('Fe cation', 40), ('heme', 37), ('NADP(+)', 29), ('ADP', 26), ('FAD', 26), ('K(+)', 19), ('AMP', 18), ('CoA', 18), ('heme b', 18), ('GDP', 17), ('Na(+)', 17), ('FMN', 17), ('acetyl-CoA', 16), ("3'-phosphoadenylyl sulfate", 16), ('glutathione', 15)]
+[sites 07:34:29 +    70s] ligand GO terms not in the vocabulary: ['GO:0016168', 'GO:0030955', 'GO:0030976', 'GO:0031402', 'GO:0031404', 'GO:0120225', 'GO:1904047']
+[sites 07:34:29 +    70s] functional residues per protein p10/p50/p90 [1.0, 4.0, 13.0]; wrote /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/analysis/c1/tv_sites.json

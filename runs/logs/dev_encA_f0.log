@@ -1,0 +1,33 @@
+[encA 04:49:20 +     0s] config dev20k encoder lora35m fold 0: training proteins 9,981 of 20,000 (other fold 10,019 held out from this adapter)
+[encA 04:49:21 +     1s] labels: vocab 7,901; mean terms/protein 34.7; known namespaces F/P/C [0.572, 0.631, 0.688]; seq len p50 409
+[encA 04:49:21 +     1s] sample protein E9Q6A7: MRGRRGRPPKQPAAPAAERCAPAPPPPPPPPPPPPPPPPPPPPASGPIGG... terms ['GO:0001892', 'GO:0007492', 'GO:0001890', 'GO:0001701', 'GO:0009952', 'GO:0048568']
+W1116 04:49:26.078000 1557948 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1116 04:49:26.116000 1557948 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+[godefs] cache hit (7901, 512) /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/cache/go_def_t5.npy
+[godefs] latent init: {'F': 4, 'P': 9, 'C': 3} centroids, shape (16, 512)
+Loading weights:   0%|          | 0/198 [00:00<?, ?it/s]Loading weights: 100%|██████████| 198/198 [00:00<00:00, 13349.71it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t12_35M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[encA 04:49:27 +     7s] params: ESM 33.4M (trainable 0.123M, LoRA r=16); resampler 8.67M; total trainable 13.88M; def-text init True
+[encA 04:49:28 +     7s] optimiser: 4 epochs x 132 steps; warmup 52
+[encA 04:50:23 +    63s] epoch 0 done in 54s: loss cls 0.0270 ret 8.1567; TV v2 head-only IA-Fmax MF 0.3920 BP 0.2399 CC 0.3656 mean 0.3325 test-like 0.3212
+[encA 04:50:38 +    78s] ep 1 step 200/528 cls 0.0243 ret 8.6054 tau 0.082 batch 46 lr 6.86e-04
+[encA 04:51:08 +   108s] epoch 1 done in 45s: loss cls 0.0240 ret 8.6730; TV v2 head-only IA-Fmax MF 0.4083 BP 0.2512 CC 0.4182 mean 0.3592 test-like 0.3443
+[encA 04:51:51 +   151s] epoch 2 done in 43s: loss cls 0.0230 ret 9.0715; TV v2 head-only IA-Fmax MF 0.4389 BP 0.2611 CC 0.4399 mean 0.3799 test-like 0.3623
+[encA 04:51:52 +   152s] ep 3 step 400/528 cls 0.0213 ret 8.5558 tau 0.083 batch 56 lr 1.38e-04
+[encA 04:52:33 +   193s] epoch 3 done in 42s: loss cls 0.0222 ret 9.1911; TV v2 head-only IA-Fmax MF 0.4493 BP 0.2651 CC 0.4413 mean 0.3852 test-like 0.3674
+[encA 04:52:33 +   193s] saved 91 tensors -> /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/dev20k/enc_lora35m_f0/model.pt
+[encA 04:52:33 +   193s] caching Z / r / h for 27,426 proteins
+[encA 04:53:33 +   253s]   Z: (27426, 16, 512) float16 (0.45 GB); sample [ 0.325    0.11316  0.517   -0.742  ]
+[encA 04:53:33 +   253s]   r: (27426, 512) float16 (0.03 GB); sample [ 0.07947   0.02606   0.012955 -0.04858 ]
+[encA 04:53:33 +   253s]   h: (27426, 480) float16 (0.03 GB); sample [ 0.000722 -0.1128    0.0964   -0.05682 ]
+[encA 04:53:33 +   253s] cache done in 60s -> /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/dev20k/enc_lora35m_f0

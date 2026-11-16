@@ -1,0 +1,67 @@
+[c1train 08:38:59 +     0s] disk free 10.2 GB; out /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/analysis/c1
+[c1train 08:39:00 +     1s] 20k subset 20,000; TV 7,566; vocab 7,901; disk 10.2 GB
+W1116 08:39:06.633000 1679178 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1116 08:39:06.664000 1679178 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+Loading weights:   0%|          | 0/198 [00:00<?, ?it/s]Loading weights: 100%|██████████| 198/198 [00:00<00:00, 11895.50it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t12_35M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[c1train 08:39:34 +    35s] collapsed fold-0: att_corr 0.899; TV head MF 0.5193 BP 0.3016 CC 0.4907 mean 0.4372 test-like 0.4142
+[godefs] cache hit (7901, 512) /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/cache/go_def_t5.npy
+[godefs] latent init: {'F': 4, 'P': 9, 'C': 3} centroids, shape (16, 512)
+[c1train 08:39:34 +    35s] control: 12.98M trainable; 20,000 proteins; 3 epochs x 334 steps; competitive=False div_w=0
+[c1train 08:39:51 +    52s] control ep 0 step 100/1002 cls 0.0279 div 0.0000 lr 9.76e-04
+[c1train 08:40:08 +    69s] control ep 0 step 200/1002 cls 0.0258 div 0.0000 lr 9.05e-04
+[c1train 08:40:24 +    84s] control ep 0 step 300/1002 cls 0.0248 div 0.0000 lr 7.95e-04
+[c1train 08:40:48 +   109s] control epoch 0 done in 74s: cls 0.0246 div 0.0000; att_corr 0.996; TV head MF 0.4729 BP 0.2722 CC 0.4386 mean 0.3946 test-like 0.3799
+[c1train 08:40:48 +   109s] control: new best test-like 0.3799 -> /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/analysis/c1/control_best.pt
+[c1train 08:40:57 +   118s] control ep 1 step 400/1002 cls 0.0226 div 0.0000 lr 6.56e-04
+[c1train 08:41:10 +   131s] control ep 1 step 500/1002 cls 0.0223 div 0.0000 lr 5.02e-04
+[c1train 08:41:23 +   144s] control ep 1 step 600/1002 cls 0.0220 div 0.0000 lr 3.47e-04
+[c1train 08:41:47 +   168s] control epoch 1 done in 59s: cls 0.0218 div 0.0000; att_corr 0.980; TV head MF 0.4853 BP 0.2856 CC 0.4771 mean 0.4160 test-like 0.3934
+[c1train 08:41:47 +   168s] control: new best test-like 0.3934 -> /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/analysis/c1/control_best.pt
+[c1train 08:41:51 +   172s] control ep 2 step 700/1002 cls 0.0218 div 0.0000 lr 2.08e-04
+[c1train 08:42:05 +   186s] control ep 2 step 800/1002 cls 0.0214 div 0.0000 lr 9.70e-05
+[c1train 08:42:16 +   197s] control ep 2 step 900/1002 cls 0.0212 div 0.0000 lr 2.54e-05
+[c1train 08:42:28 +   209s] control ep 2 step 1000/1002 cls 0.0210 div 0.0000 lr 9.83e-09
+[c1train 08:42:44 +   225s] control epoch 2 done in 56s: cls 0.0210 div 0.0000; att_corr 0.978; TV head MF 0.4931 BP 0.2883 CC 0.4796 mean 0.4203 test-like 0.3970
+[c1train 08:42:44 +   225s] control: new best test-like 0.3970 -> /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/analysis/c1/control_best.pt
+[c1train 08:42:44 +   225s] competitive: 12.98M trainable; 20,000 proteins; 3 epochs x 334 steps; competitive=True div_w=0.25
+/home/aj0486@students.ad.unt.edu/PFA/tracego/scripts/analysis_c1_train.py:150: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:822.)
+  tot["div"] += float(l_div) * len(br)
+[c1train 08:42:55 +   236s] competitive ep 0 step 100/1002 cls nan div nan lr 9.76e-04
+[c1train 08:43:06 +   247s] competitive ep 0 step 200/1002 cls nan div nan lr 9.05e-04
+[c1train 08:43:17 +   258s] competitive ep 0 step 300/1002 cls nan div nan lr 7.95e-04
+Traceback (most recent call last):
+  File "/home/aj0486@students.ad.unt.edu/PFA/tracego/scripts/analysis_c1_train.py", line 239, in <module>
+    main()
+  File "/home/aj0486@students.ad.unt.edu/PFA/tracego/scripts/analysis_c1_train.py", line 234, in main
+    train_one("competitive", comp, adapter.enc, tok, b, rows, Y, K, aspect_idx, w_term, ev, tv, od, dev, True)
+  File "/home/aj0486@students.ad.unt.edu/PFA/tracego/scripts/analysis_c1_train.py", line 157, in train_one
+    s = tv_head_fmax(head, enc, tok, b, tv, ev, dev)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aj0486@students.ad.unt.edu/PFA/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aj0486@students.ad.unt.edu/PFA/tracego/scripts/analysis_c1_train.py", line 96, in tv_head_fmax
+    cur = ev.curves(topk_csr(P), b.prot.id.values[tv_rows])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aj0486@students.ad.unt.edu/PFA/tracego/tracego/eval/score.py", line 96, in curves
+    return self.sc.curves(P, np.asarray(ids).astype(str))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aj0486@students.ad.unt.edu/PFA/cafa6/src/cafa6/knn_sharp.py", line 252, in curves
+    P = self.o.propagate_max(P)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aj0486@students.ad.unt.edu/PFA/cafa6/src/cafa6/knn_sharp.py", line 203, in propagate_max
+    key, vv = key[first], vv[first]
+              ~~~^^^^^^^
+IndexError: boolean index did not match indexed array along axis 0; size of axis is 0 but size of corresponding boolean axis is 1

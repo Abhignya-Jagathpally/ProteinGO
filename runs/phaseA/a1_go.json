@@ -1,0 +1,68 @@
+{
+ "tv": {
+  "vote": {
+   "MF": 0.7529,
+   "BP": 0.6818,
+   "CC": 0.7724,
+   "mean": 0.7357,
+   "mean_testlike": 0.7259
+  },
+  "curriculum_mix": {
+   "MF": 0.7499,
+   "BP": 0.6843,
+   "CC": 0.7712,
+   "mean": 0.7351,
+   "mean_testlike": 0.7247
+  },
+  "boot_mean": {
+   "diff": -0.0006,
+   "lo": -0.0021,
+   "hi": 0.0011
+  },
+  "boot_testlike": {
+   "diff": -0.0012,
+   "lo": -0.003,
+   "hi": 0.0007
+  }
+ },
+ "tvr": {
+  "vote": {
+   "MF": 0.6288,
+   "BP": 0.3876,
+   "CC": 0.5534,
+   "mean": 0.5233,
+   "mean_testlike": 0.5005
+  },
+  "curriculum_mix": {
+   "MF": 0.6274,
+   "BP": 0.3875,
+   "CC": 0.5696,
+   "mean": 0.5282,
+   "mean_testlike": 0.5076
+  },
+  "boot_mean": {
+   "diff": 0.0049,
+   "lo": 0.0029,
+   "hi": 0.0067
+  },
+  "boot_testlike": {
+   "diff": 0.0071,
+   "lo": 0.0046,
+   "hi": 0.0091
+  }
+ },
+ "tv_vs_anchor": {
+  "anchor_file": "pred_tv_mix.npz",
+  "boot": {
+   "diff": 0.0097,
+   "lo": 0.0074,
+   "hi": 0.0119
+  },
+  "raw_keys": [
+   "diff",
+   "lo",
+   "hi",
+   "reps"
+  ]
+ }
+}

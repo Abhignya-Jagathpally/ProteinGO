@@ -1,0 +1,47 @@
+[aux 09:31:49 +     0s] disk before export:
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mapper/ubuntu--vg-ubuntu--lv  1.4T  1.3T  8.8G 100% /
+
+W1116 09:31:53.687000 1724459 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1116 09:31:53.718000 1724459 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+Loading weights:   0%|          | 0/198 [00:00<?, ?it/s]Loading weights: 100%|██████████| 198/198 [00:00<00:00, 12032.86it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t12_35M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[aux 09:31:54 +     5s] signal heads 6; loc heads 5 variant=with_signal
+[aux 09:31:54 +     5s] === train: 112,983 proteins ===
+[aux 09:33:28 +    98s]   wrote signal_train.npz sp_prob (112983, 6) mean p(SP)=0.137 (93s)
+[aux 09:37:45 +   355s]   wrote loc_train.npz loc_prob (112983, 10) mean labels@0.5=1.06 (257s)
+[aux 09:37:45 +   356s] === tv: 7,566 proteins ===
+[aux 09:37:51 +   362s]   wrote signal_tv.npz sp_prob (7566, 6) mean p(SP)=0.131 (6s)
+[aux 09:38:05 +   376s]   wrote loc_tv.npz loc_prob (7566, 10) mean labels@0.5=1.09 (14s)
+[aux 09:38:05 +   376s] B4 Cytoplasm                GO:0005737 n_pos=2703 prev=0.3573 AUPR=0.4383
+[aux 09:38:05 +   376s] B4 Nucleus                  GO:0005634 n_pos=1779 prev=0.2351 AUPR=0.4590
+[aux 09:38:05 +   376s] B4 Extracellular            GO:0005576 n_pos= 453 prev=0.0599 AUPR=0.2198
+[aux 09:38:05 +   376s] B4 Cell membrane            GO:0005886 n_pos= 932 prev=0.1232 AUPR=0.3486
+[aux 09:38:05 +   376s] B4 Mitochondrion            GO:0005739 n_pos= 450 prev=0.0595 AUPR=0.4053
+[aux 09:38:05 +   376s] B4 Plastid                  GO:0009536 n_pos=  92 prev=0.0122 AUPR=0.3531
+[aux 09:38:05 +   376s] B4 Endoplasmic reticulum    GO:0005783 n_pos= 265 prev=0.0350 AUPR=0.2113
+[aux 09:38:05 +   376s] B4 Lysosome/Vacuole         GO:0005773 n_pos= 172 prev=0.0227 AUPR=0.0799
+[aux 09:38:05 +   376s] B4 Golgi apparatus          GO:0005794 n_pos= 267 prev=0.0353 AUPR=0.2054
+[aux 09:38:05 +   376s] B4 Peroxisome               GO:0005777 n_pos=  47 prev=0.0062 AUPR=0.1151
+[aux 09:38:06 +   376s] B4 TV proteins overlapping DeepLoc train: 985/7566
+[aux 09:38:06 +   376s] === test: 8,630 proteins ===
+[aux 09:38:10 +   381s]   wrote signal_test.npz sp_prob (8630, 6) mean p(SP)=0.153 (4s)
+[aux 09:38:29 +   400s]   wrote loc_test.npz loc_prob (8630, 10) mean labels@0.5=1.06 (19s)
+[aux 09:38:29 +   400s] === fr24p: 11,231 proteins ===
+[aux 09:38:37 +   408s]   wrote signal_fr24p.npz sp_prob (11231, 6) mean p(SP)=0.156 (8s)
+[aux 09:38:54 +   425s]   wrote loc_fr24p.npz loc_prob (11231, 10) mean labels@0.5=1.04 (17s)
+[aux 09:38:54 +   425s] disk after export:
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mapper/ubuntu--vg-ubuntu--lv  1.4T  1.3T  8.5G 100% /
+
+[aux 09:38:54 +   425s] done

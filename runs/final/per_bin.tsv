@@ -1,0 +1,31 @@
+bench	method	no_hit	<30	30-50	50-80	80-95	95-99.9	100
+tv	TraceGO	0.4428	0.4758	0.5161	0.5297	0.6893	0.7746	0.7658
+tv	TraceGO (pre-A anchor)	0.4427	0.4851	0.5119	0.5306	0.6846	0.7665	0.7496
+tv	TraceGO retrieval only (embedding kNN vote)	0.4475	0.5121	0.5177	0.5265	0.6912	0.7726	0.7688
+tv	retrieval only (pre-A, no k-mer)	0.45	0.5365	0.5164	0.5261	0.6861	0.7657	0.7494
+tv	retrieval only, frozen-encoder candidates	0.4642	0.5235	0.5133	0.5305	0.687	0.7648	0.749
+tv	ablation: classifier head only (no decoder)	0.4623	0.4633	0.5266	0.5338	0.6852	0.7558	0.7376
+tv	ablation: unanchored decoder (dev. run)	0.4426	0.4917	0.5227	0.5206	0.6756	0.7565	0.7371
+test	TraceGO	0.3288	0.4861	0.466	0.4541	0.6657	0.851	0.8822
+test	TraceGO (pre-A anchor)	0.3135	0.4743	0.4552	0.4489	0.668	0.8499	0.8653
+test	TraceGO retrieval only (embedding kNN vote)	0.3308	0.4688	0.4632	0.4544	0.6661	0.8583	0.8937
+test	retrieval only (pre-A, no k-mer)	0.3182	0.4697	0.4597	0.4496	0.6605	0.85	0.8681
+test	retrieval only, frozen-encoder candidates	0.3089	0.4568	0.4556	0.4491	0.6616	0.8487	0.8687
+test	ablation: classifier head only (no decoder)	0.346	0.479	0.4641	0.454	0.6547	0.8327	0.8276
+test	DIAMOND kNN train+val (repo)	0.0	0.486	0.4759	0.4417	0.6591	0.8616	0.8977
+test	HiGO-R2 (prelim)	0.3325	0.4563	0.4681	0.4813	0.6611	0.8544	0.8791
+test	GO-GPT ten-sample	0.3772	0.4623	0.4386	0.4689	0.6483	0.8347	0.8428
+test	BLAST-KNN	0.0	0.3492	0.3578	0.3949	0.6192	0.8226	0.8817
+test	BLAST-KNN train+val	0.0	0.3742	0.3526	0.3942	0.6285	0.844	0.8944
+test	SPROF-GO	0.3975	0.5365	0.5116	0.506	0.5715	0.5821	0.5507
+fr24p	TraceGO	0.367	0.4463	0.51	0.5309	0.5001	0.4893	0.3948
+fr24p	TraceGO (pre-A anchor)	0.3693	0.4412	0.507	0.5308	0.4996	0.4875	0.4017
+fr24p	TraceGO retrieval only (embedding kNN vote)	0.3739	0.4414	0.5095	0.53	0.4991	0.486	0.3966
+fr24p	retrieval only (pre-A, no k-mer)	0.3739	0.4414	0.5095	0.53	0.4991	0.486	0.3966
+fr24p	retrieval only, frozen-encoder candidates	0.3673	0.4399	0.5054	0.5275	0.4996	0.4853	0.3999
+fr24p	ablation: classifier head only (no decoder)	0.3754	0.455	0.513	0.5363	0.5057	0.4908	0.3925
+fr24p	SPROF-GO	0.4536	0.4878	0.5317	0.558	0.5309	0.4686	0.4364
+fr24p	HiGO-R2 / Ontologue (prelim)	0.3336	0.4202	0.4795	0.5271	0.5135	0.5175	0.5732
+fr24p	Ontologue kNN	0.0	0.406	0.4965	0.5304	0.5108	0.5125	0.5751
+fr24p	GO-GPT ten-sample	0.3846	0.4249	0.4857	0.5082	0.4718	0.4577	0.3834
+fr24p	BLAST-KNN train+val	0.0	0.318	0.3629	0.4326	0.4494	0.4727	0.5228

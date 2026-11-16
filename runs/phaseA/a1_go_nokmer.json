@@ -1,0 +1,38 @@
+{
+ "vote": {
+  "MF": 0.645,
+  "BP": 0.4023,
+  "CC": 0.5655,
+  "mean": 0.5376,
+  "mean_testlike": 0.5143
+ },
+ "curriculum_nokmer": {
+  "MF": 0.6422,
+  "BP": 0.4014,
+  "CC": 0.5755,
+  "mean": 0.5397,
+  "mean_testlike": 0.5202
+ },
+ "boot_vs_vote": {
+  "diff": 0.002,
+  "lo": 0.0006,
+  "hi": 0.0038
+ },
+ "boot_vs_vote_tl": {
+  "diff": 0.0059,
+  "lo": 0.0037,
+  "hi": 0.008
+ },
+ "boot_vs_anchor": {
+  "diff": 0.001,
+  "lo": 0.0,
+  "hi": 0.0026
+ },
+ "anchor": {
+  "MF": 0.6439,
+  "BP": 0.4,
+  "CC": 0.5722,
+  "mean": 0.5387,
+  "mean_testlike": 0.5166
+ }
+}

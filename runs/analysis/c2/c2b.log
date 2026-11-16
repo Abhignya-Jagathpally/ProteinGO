@@ -1,0 +1,14 @@
+W1116 10:01:20.087000 1737742 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1116 10:01:20.119000 1737742 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+[c2 10:01:20 +     5s] disk free 9.0 GB
+[c2 10:01:20 +     5s] TV subset 1,514; train embed 8,000
+[c2 10:01:21 +     5s] loaded embeddings (1514, 1024) + (8000, 1024) from /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/analysis/c2/prostt5_emb.npz
+[c2 10:02:51 +    96s] Q1 pairs 37,832; mean IA-Jaccard top 0.0638 rand 0.0303
+[c2 10:02:51 +    96s] Q2 low-id high-struct: n=2989 mean IA-Jacc 0.08678288466251803 vs rand 0.030299304517032558
+Traceback (most recent call last):
+  File "/home/aj0486@students.ad.unt.edu/PFA/tracego/scripts/analysis_c2_structure.py", line 344, in <module>
+    main()
+  File "/home/aj0486@students.ad.unt.edu/PFA/tracego/scripts/analysis_c2_structure.py", line 206, in main
+    logits = z @ Pt[bi].T / 0.07
+             ~~^~~~~~~~~~
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (256x256 and 1024x256)

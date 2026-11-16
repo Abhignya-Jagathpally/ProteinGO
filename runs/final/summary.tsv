@@ -1,0 +1,31 @@
+bench	method	MF	BP	CC	mean	mean_testlike
+tv	TraceGO	0.7499	0.6843	0.7712	0.7351	0.7247
+tv	TraceGO (pre-A anchor)	0.7457	0.6687	0.761	0.7251	0.7152
+tv	TraceGO retrieval only (embedding kNN vote)	0.7529	0.6818	0.7724	0.7357	0.7259
+tv	retrieval only (pre-A, no k-mer)	0.7481	0.6675	0.7595	0.725	0.7158
+tv	retrieval only, frozen-encoder candidates	0.7487	0.6674	0.7588	0.725	0.7173
+tv	ablation: classifier head only (no decoder)	0.7471	0.6579	0.7491	0.718	0.704
+tv	ablation: unanchored decoder (dev. run)	0.7397	0.653	0.7532	0.7153	0.6943
+test	TraceGO	0.7424	0.6507	0.7456	0.7129	
+test	TraceGO (pre-A anchor)	0.7355	0.6409	0.7365	0.7043	
+test	TraceGO retrieval only (embedding kNN vote)	0.7493	0.6468	0.7559	0.7173	
+test	retrieval only (pre-A, no k-mer)	0.7381	0.6384	0.7373	0.7046	
+test	retrieval only, frozen-encoder candidates	0.7379	0.6385	0.7364	0.7043	
+test	ablation: classifier head only (no decoder)	0.7235	0.6326	0.7141	0.6901	
+test	DIAMOND kNN train+val (repo)	0.7582	0.6488	0.7548	0.7206	
+test	HiGO-R2 (prelim)	0.7378	0.6579	0.7576	0.7178	
+test	GO-GPT ten-sample	0.7203	0.6296	0.7454	0.6984	
+test	BLAST-KNN	0.7275	0.6473	0.7104	0.695	
+test	BLAST-KNN train+val	0.7328	0.6686	0.7241	0.7085	
+test	SPROF-GO	0.6151	0.4003	0.6085	0.5413	
+fr24p	TraceGO	0.5908	0.283	0.5847	0.4862	
+fr24p	TraceGO (pre-A anchor)	0.5922	0.2832	0.5809	0.4854	
+fr24p	TraceGO retrieval only (embedding kNN vote)	0.5935	0.2851	0.5778	0.4855	
+fr24p	retrieval only (pre-A, no k-mer)	0.5935	0.2851	0.5778	0.4855	
+fr24p	retrieval only, frozen-encoder candidates	0.5932	0.2835	0.574	0.4836	
+fr24p	ablation: classifier head only (no decoder)	0.6036	0.2931	0.5715	0.4894	
+fr24p	SPROF-GO	0.6022	0.3133	0.6286	0.5147	
+fr24p	HiGO-R2 / Ontologue (prelim)	0.5715	0.3031	0.5636	0.4794	
+fr24p	Ontologue kNN	0.6013	0.2828	0.489	0.4577	
+fr24p	GO-GPT ten-sample	0.5236	0.2727	0.6071	0.4678	
+fr24p	BLAST-KNN train+val	0.4806	0.2255	0.4174	0.3745	

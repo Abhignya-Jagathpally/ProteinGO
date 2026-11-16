@@ -1,0 +1,31 @@
+[d3 08:59:33 +     0s] disk free 9.7 GB; slim True
+[d3 08:59:34 +     1s] holdout sample 6,000; MF classes 15
+[d3 08:59:34 +     1s] GO-slim terms parsed: 140
+[d3 08:59:38 +     5s] GO-slim labelled proteins 5707/6000; classes used 140
+[d3 08:59:41 +     7s] frozen/MF: NMI 0.215±0.002 ARI 0.114 ASW 0.457 knn10 0.583
+[d3 08:59:43 +     9s] frozen/slim: NMI 0.262 ASW 0.417 knn10 0.705
+[d3 08:59:43 +    10s] frozen spectrum: eff_rank 36.9 PR 10.5 PCs@90% 68
+/home/aj0486@students.ad.unt.edu/PFA/lib/python3.12/site-packages/umap/umap_.py:4160: FutureWarning: compatibility_layout was not set, so UMAP is using the legacy (0.5.x) nearest-neighbor, initialization and layout pipeline. In a future release the default will change to compatibility_layout=False, which uses recursive initialization and the Adam optimizer and produces different embeddings. Set compatibility_layout=True to keep the current behavior and silence this warning, or compatibility_layout=False (or optimizer='adam') to adopt the new behavior now.
+  self.fit(X, y, ensure_all_finite, **kwargs)
+/home/aj0486@students.ad.unt.edu/PFA/lib/python3.12/site-packages/umap/umap_.py:3099: UserWarning: n_jobs value -1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+[d3 09:00:29 +    56s] adapted/MF: NMI 0.260±0.006 ARI 0.149 ASW 0.440 knn10 0.590
+[d3 09:00:31 +    58s] adapted/slim: NMI 0.309 ASW 0.407 knn10 0.717
+[d3 09:00:32 +    58s] adapted spectrum: eff_rank 39.3 PR 14.6 PCs@90% 64
+/home/aj0486@students.ad.unt.edu/PFA/lib/python3.12/site-packages/umap/umap_.py:4160: FutureWarning: compatibility_layout was not set, so UMAP is using the legacy (0.5.x) nearest-neighbor, initialization and layout pipeline. In a future release the default will change to compatibility_layout=False, which uses recursive initialization and the Adam optimizer and produces different embeddings. Set compatibility_layout=True to keep the current behavior and silence this warning, or compatibility_layout=False (or optimizer='adam') to adopt the new behavior now.
+  self.fit(X, y, ensure_all_finite, **kwargs)
+/home/aj0486@students.ad.unt.edu/PFA/lib/python3.12/site-packages/umap/umap_.py:3099: UserWarning: n_jobs value -1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+[d3 09:00:49 +    76s] latents/MF: NMI 0.369±0.001 ARI 0.251 ASW 0.454 knn10 0.601
+[d3 09:00:51 +    78s] latents/slim: NMI 0.378 ASW 0.433 knn10 0.736
+[d3 09:00:51 +    78s] latents spectrum: eff_rank 11.7 PR 8.2 PCs@90% 10
+/home/aj0486@students.ad.unt.edu/PFA/lib/python3.12/site-packages/umap/umap_.py:4160: FutureWarning: compatibility_layout was not set, so UMAP is using the legacy (0.5.x) nearest-neighbor, initialization and layout pipeline. In a future release the default will change to compatibility_layout=False, which uses recursive initialization and the Adam optimizer and produces different embeddings. Set compatibility_layout=True to keep the current behavior and silence this warning, or compatibility_layout=False (or optimizer='adam') to adopt the new behavior now.
+  self.fit(X, y, ensure_all_finite, **kwargs)
+/home/aj0486@students.ad.unt.edu/PFA/lib/python3.12/site-packages/umap/umap_.py:3099: UserWarning: n_jobs value -1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+[d3 09:01:07 +    94s] GO DAG Laplacian eigenvectors ...
+[d3 09:01:10 +    97s] Laplacian F: nodes 11,263 eigs 21 first λ 0.0008382640370409092
+[d3 09:01:12 +    99s] Laplacian P: nodes 27,942 eigs 21 first λ 0.0024824547568933907
+[d3 09:01:12 +    99s] Laplacian C: nodes 4,043 eigs 21 first λ 0.006639036906132342
+[d3 09:01:14 +   101s] Laplacian ns NMI 0.089 knn 1.000; depth R2 0.007 Spearman 0.101; CKA lap-text 0.096
+[d3 09:01:15 +   102s] done; disk free 9.6 GB

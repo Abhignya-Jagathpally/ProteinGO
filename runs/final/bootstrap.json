@@ -1,0 +1,62 @@
+{
+ "tv: TraceGO - retrieval only": {
+  "diff": -0.00059611725182529,
+  "lo": -0.0020695545804906403,
+  "hi": 0.0010907781488399073,
+  "reps": 1000
+ },
+ "tv test-like: TraceGO - retrieval only": {
+  "diff": -0.0012298399223121814,
+  "lo": -0.003036330543983096,
+  "hi": 0.0006926648422508057,
+  "reps": 1000
+ },
+ "test: TraceGO - DIAMOND kNN train+val (repo)": {
+  "diff": -0.007714618078200397,
+  "lo": -0.010895891897341175,
+  "hi": -0.004233412648889848,
+  "reps": 1000
+ },
+ "test: TraceGO - HiGO-R2 (prelim)": {
+  "diff": -0.004872928611595495,
+  "lo": -0.00881505856057351,
+  "hi": -0.0006952563322368128,
+  "reps": 1000
+ },
+ "test: TraceGO retrieval only (embedding kNN vote) - DIAMOND kNN train+val (repo)": {
+  "diff": -0.003287598920817203,
+  "lo": -0.006192663296713039,
+  "hi": -4.3214844410275206e-05,
+  "reps": 1000
+ },
+ "test: TraceGO retrieval only (embedding kNN vote) - HiGO-R2 (prelim)": {
+  "diff": -0.000445909454212301,
+  "lo": -0.004559036993753998,
+  "hi": 0.0035477792337577567,
+  "reps": 1000
+ },
+ "fr24p: TraceGO - SPROF-GO": {
+  "diff": -0.028505756614544464,
+  "lo": -0.033113480413129656,
+  "hi": -0.02291715295587399,
+  "reps": 1000
+ },
+ "fr24p: TraceGO - HiGO-R2 / Ontologue (prelim)": {
+  "diff": 0.00680612941825004,
+  "lo": 0.002229864257649193,
+  "hi": 0.011499425129872953,
+  "reps": 1000
+ },
+ "fr24p: TraceGO retrieval only (embedding kNN vote) - SPROF-GO": {
+  "diff": -0.029230438767228306,
+  "lo": -0.034005443914662384,
+  "hi": -0.023922285157205937,
+  "reps": 1000
+ },
+ "fr24p: TraceGO retrieval only (embedding kNN vote) - HiGO-R2 / Ontologue (prelim)": {
+  "diff": 0.006081447265566198,
+  "lo": 0.001309699498606208,
+  "hi": 0.010282560166547421,
+  "reps": 1000
+ }
+}

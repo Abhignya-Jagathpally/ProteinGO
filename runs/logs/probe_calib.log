@@ -1,0 +1,22 @@
+[calib 05:23:33 +    76s] train pair features (20000, 100, 14) in 66s
+[calib 05:23:37 +    80s] targets in 1s: mean overlap 0.120, top-1 0.310
+/home/aj0486@students.ad.unt.edu/PFA/tracego/scripts/probe_calib.py:90: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:822.)
+  tot += float(loss) * len(j)
+[calib 05:23:38 +    81s] epoch 0: bce 0.3786
+[calib 05:23:38 +    81s] epoch 1: bce 0.3585
+[calib 05:23:39 +    82s] epoch 2: bce 0.3582
+[calib 05:23:39 +    82s] epoch 3: bce 0.3580
+[calib 05:23:39 +    82s] epoch 4: bce 0.3579
+[calib 05:23:39 +    82s] epoch 5: bce 0.3578
+[calib 05:23:39 +    82s] epoch 6: bce 0.3578
+[calib 05:23:40 +    83s] epoch 7: bce 0.3577
+[calib 05:23:41 +    84s] calibrated T=0.02 k=20: mean 0.7166 test-like 0.7018 (MF 0.7391 BP 0.6610 CC 0.7495)
+[calib 05:23:43 +    86s] calibrated T=0.02 k=50: mean 0.7177 test-like 0.7025 (MF 0.7413 BP 0.6615 CC 0.7505)
+[calib 05:23:45 +    89s] calibrated T=0.05 k=20: mean 0.7221 test-like 0.7097 (MF 0.7498 BP 0.6639 CC 0.7527)
+[calib 05:23:49 +    92s] calibrated T=0.05 k=50: mean 0.7242 test-like 0.7136 (MF 0.7535 BP 0.6666 CC 0.7523)
+[calib 05:23:53 +    96s] calibrated T=0.1 k=20: mean 0.7221 test-like 0.7119 (MF 0.7550 BP 0.6622 CC 0.7492)
+[calib 05:23:59 +   102s] calibrated T=0.1 k=50: mean 0.7176 test-like 0.7095 (MF 0.7487 BP 0.6589 CC 0.7451)
+[calib 05:24:03 +   106s] calibrated T=0.2 k=20: mean 0.7111 test-like 0.6979 (MF 0.7498 BP 0.6453 CC 0.7380)
+[calib 05:24:12 +   115s] calibrated T=0.2 k=50: mean 0.6927 test-like 0.6775 (MF 0.7357 BP 0.6206 CC 0.7219)
+[calib 05:24:12 +   115s] best (0.05, 50) 0.7136; bins {'no_hit': (91, 0.45364415105342654), '<30': (69, 0.5082710178601656), '30-50': (244, 0.5317950959538277), '50-80': (301, 0.5406251429427978), '80-95': (1634, 0.6743932130949721), '95-99.9': (2664, 0.7675385156960278), '100': (2563, 0.7493070759019343)}

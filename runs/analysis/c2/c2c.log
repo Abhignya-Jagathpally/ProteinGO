@@ -1,0 +1,32 @@
+W1116 10:12:28.061000 1754801 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1116 10:12:28.094000 1754801 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+[c2 10:12:28 +     5s] disk free 8.4 GB
+[c2 10:12:28 +     5s] TV subset 1,514; train embed 8,000
+[c2 10:12:29 +     5s] loaded embeddings (1514, 1024) + (8000, 1024) from /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/analysis/c2/prostt5_emb.npz
+[c2 10:13:59 +    96s] Q1 pairs 37,832; mean IA-Jaccard top 0.0638 rand 0.0303
+[c2 10:13:59 +    96s] Q2 low-id high-struct: n=2989 mean IA-Jacc 0.08678288466251803 vs rand 0.030299304517032558
+[c2 10:14:00 +    96s] contrastive ep 0: loss 2.7660 val MRR 0.748
+[c2 10:14:00 +    96s] contrastive ep 1: loss 0.8209 val MRR 0.895
+[c2 10:14:00 +    96s] contrastive ep 2: loss 0.4435 val MRR 0.946
+[c2 10:14:00 +    96s] contrastive ep 3: loss 0.2958 val MRR 0.964
+[c2 10:14:00 +    96s] contrastive ep 4: loss 0.2184 val MRR 0.974
+[c2 10:14:00 +    96s] contrastive ep 5: loss 0.1732 val MRR 0.976
+[c2 10:14:00 +    97s] contrastive ep 6: loss 0.1454 val MRR 0.976
+[c2 10:14:00 +    97s] contrastive ep 7: loss 0.1260 val MRR 0.981
+[c2 10:14:00 +    97s] contrastive ep 8: loss 0.1105 val MRR 0.986
+[c2 10:14:00 +    97s] contrastive ep 9: loss 0.0982 val MRR 0.985
+[c2 10:14:00 +    97s] contrastive ep 10: loss 0.0892 val MRR 0.984
+[c2 10:14:00 +    97s] contrastive ep 11: loss 0.0829 val MRR 0.980
+[c2 10:14:00 +    97s] contrastive ep 12: loss 0.0783 val MRR 0.984
+[c2 10:14:00 +    97s] contrastive ep 13: loss 0.0719 val MRR 0.987
+[c2 10:14:00 +    97s] contrastive ep 14: loss 0.0668 val MRR 0.987
+[c2 10:14:06 +   103s] lam 0.0: mid-id Fmax 0.5261
+[c2 10:14:10 +   107s] lam 0.05: mid-id Fmax 0.5266
+[c2 10:14:15 +   111s] lam 0.1: mid-id Fmax 0.5271
+[c2 10:14:19 +   115s] lam 0.2: mid-id Fmax 0.5286
+[c2 10:14:22 +   119s] lam 0.4: mid-id Fmax 0.5291
+[c2 10:14:34 +   131s] Q3 best lam 0.4; base mean 0.7250 struct 0.7225 shuffle 0.7244
+[c2 10:14:34 +   131s]   <30: base 0.5365 -> struct 0.534
+[c2 10:14:34 +   131s]   30-50: base 0.5164 -> struct 0.5178
+[c2 10:14:34 +   131s]   50-80: base 0.5261 -> struct 0.5291
+[c2 10:14:35 +   131s] done; disk free 8.3 GB

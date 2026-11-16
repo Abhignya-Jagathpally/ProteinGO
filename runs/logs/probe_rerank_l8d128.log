@@ -1,0 +1,45 @@
+[rerank 04:45:15 +     4s] recall of DIAMOND best hit in pooled top-1: 0.730
+[rerank 04:45:15 +     4s] recall of DIAMOND best hit in pooled top-5: 0.896
+[rerank 04:45:15 +     4s] recall of DIAMOND best hit in pooled top-10: 0.916
+[rerank 04:45:15 +     4s] recall of DIAMOND best hit in pooled top-50: 0.944
+[rerank 04:45:16 +     4s] recall of DIAMOND best hit in pooled top-100: 0.955
+W1116 04:45:20.904000 1555176 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1116 04:45:20.937000 1555176 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+Loading weights:   0%|          | 0/198 [00:00<?, ?it/s]Loading weights: 100%|██████████| 198/198 [00:00<00:00, 11873.39it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t12_35M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[rerank 04:48:38 +   206s] residue codes layer 8 dim 128 for 114,043 proteins in 202s
+[rerank 04:49:00 +   229s] MaxSim for 7,566 x 100 pairs in 22s
+[rerank 04:49:00 +   229s] recall of DIAMOND best hit in re-ranked (q2c) top-1: 0.816
+[rerank 04:49:00 +   229s] recall of DIAMOND best hit in re-ranked (sym) top-1: 0.799
+[rerank 04:49:00 +   229s] recall of DIAMOND best hit in re-ranked (min) top-1: 0.773
+[rerank 04:49:00 +   229s] recall of DIAMOND best hit in re-ranked (q2c) top-5: 0.929
+[rerank 04:49:00 +   229s] recall of DIAMOND best hit in re-ranked (sym) top-5: 0.929
+[rerank 04:49:00 +   229s] recall of DIAMOND best hit in re-ranked (min) top-5: 0.905
+[rerank 04:49:03 +   232s] re-ranked (sym) kNN T=0.005 k=10: mean 0.7006 test-like 0.6888 (MF 0.7169 BP 0.6467 CC 0.7382)
+[rerank 04:49:05 +   233s] re-ranked (sym) kNN T=0.005 k=50: mean 0.7016 test-like 0.6908 (MF 0.7189 BP 0.6471 CC 0.7389)
+[rerank 04:49:06 +   235s] re-ranked (sym) kNN T=0.01 k=10: mean 0.7064 test-like 0.6909 (MF 0.7301 BP 0.6477 CC 0.7414)
+[rerank 04:49:08 +   237s] re-ranked (sym) kNN T=0.01 k=50: mean 0.7099 test-like 0.6962 (MF 0.7350 BP 0.6512 CC 0.7435)
+[rerank 04:49:10 +   239s] re-ranked (sym) kNN T=0.02 k=10: mean 0.7076 test-like 0.6898 (MF 0.7351 BP 0.6470 CC 0.7407)
+[rerank 04:49:14 +   242s] re-ranked (sym) kNN T=0.02 k=50: mean 0.7118 test-like 0.6965 (MF 0.7433 BP 0.6504 CC 0.7418)
+[rerank 04:49:16 +   244s] re-ranked (sym) kNN T=0.05 k=10: mean 0.7009 test-like 0.6736 (MF 0.7378 BP 0.6343 CC 0.7306)
+[rerank 04:49:24 +   253s] re-ranked (sym) kNN T=0.05 k=50: mean 0.6884 test-like 0.6644 (MF 0.7381 BP 0.6133 CC 0.7137)
+[rerank 04:49:26 +   255s] bins (sym, T=0.01 k=50): {'no_hit': (91, 0.4125993106521204), '<30': (69, 0.5369133529475786), '30-50': (244, 0.5121332980861054), '50-80': (301, 0.52458267306315), '80-95': (1634, 0.6791861009658372), '95-99.9': (2664, 0.7574499971773238), '100': (2563, 0.7209844039614876)}
+[rerank 04:49:27 +   256s] re-ranked (min) kNN T=0.005 k=10: mean 0.6885 test-like 0.6797 (MF 0.7107 BP 0.6323 CC 0.7226)
+[rerank 04:49:29 +   258s] re-ranked (min) kNN T=0.005 k=50: mean 0.6896 test-like 0.6797 (MF 0.7132 BP 0.6325 CC 0.7230)
+[rerank 04:49:30 +   259s] re-ranked (min) kNN T=0.01 k=10: mean 0.6944 test-like 0.6820 (MF 0.7233 BP 0.6345 CC 0.7254)
+[rerank 04:49:32 +   261s] re-ranked (min) kNN T=0.01 k=50: mean 0.6975 test-like 0.6853 (MF 0.7281 BP 0.6364 CC 0.7280)
+[rerank 04:49:34 +   263s] re-ranked (min) kNN T=0.02 k=10: mean 0.6964 test-like 0.6818 (MF 0.7284 BP 0.6345 CC 0.7264)
+[rerank 04:49:37 +   266s] re-ranked (min) kNN T=0.02 k=50: mean 0.7011 test-like 0.6915 (MF 0.7374 BP 0.6371 CC 0.7287)
+[rerank 04:49:40 +   268s] re-ranked (min) kNN T=0.05 k=10: mean 0.6907 test-like 0.6714 (MF 0.7319 BP 0.6221 CC 0.7182)
+[rerank 04:49:47 +   276s] re-ranked (min) kNN T=0.05 k=50: mean 0.6824 test-like 0.6602 (MF 0.7345 BP 0.6060 CC 0.7066)
+[rerank 04:49:49 +   278s] bins (min, T=0.01 k=50): {'no_hit': (91, 0.4230892096395149), '<30': (69, 0.5287742905319667), '30-50': (244, 0.5023692813751989), '50-80': (301, 0.5207905199434849), '80-95': (1634, 0.6724711004765626), '95-99.9': (2664, 0.7489080057640622), '100': (2563, 0.699667797310902)}

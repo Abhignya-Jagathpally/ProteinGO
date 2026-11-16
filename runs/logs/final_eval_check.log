@@ -1,0 +1,32 @@
+[final 06:15:42 +     5s] tv    TraceGO retrieval only (embedding kNN vote)      MF 0.7481 BP 0.6675 CC 0.7595 mean 0.7250 test-like 0.7158
+[final 06:15:45 +     8s] tv    ablation: classifier head only (no decoder)      MF 0.7471 BP 0.6579 CC 0.7491 mean 0.7180 test-like 0.7040
+[final 06:15:50 +    13s] tv    ablation: unanchored decoder (dev. run)          MF 0.7397 BP 0.6530 CC 0.7532 mean 0.7153 test-like 0.6943
+[final 06:15:50 +    13s] tv identity-bin sizes {'no_hit': 91, '<30': 69, '30-50': 244, '50-80': 301, '80-95': 1634, '95-99.9': 2664, '100': 2563}
+[final 06:15:55 +    17s] test  TraceGO retrieval only (embedding kNN vote)      MF 0.7381 BP 0.6384 CC 0.7373 mean 0.7046
+[final 06:15:58 +    21s] test  ablation: classifier head only (no decoder)      MF 0.7235 BP 0.6326 CC 0.7141 mean 0.6901
+[final 06:16:01 +    24s] test  DIAMOND kNN train+val (repo)                     MF 0.7582 BP 0.6488 CC 0.7548 mean 0.7206
+[final 06:16:04 +    26s] test  HiGO-R2 (prelim)                                 MF 0.7378 BP 0.6579 CC 0.7576 mean 0.7178
+[final 06:16:05 +    28s] test  GO-GPT ten-sample                                MF 0.7203 BP 0.6296 CC 0.7454 mean 0.6984
+[final 06:16:05 +    28s] test  BLAST-KNN                                        MF 0.7275 BP 0.6473 CC 0.7104 mean 0.6950
+[final 06:16:06 +    29s] test  BLAST-KNN train+val                              MF 0.7328 BP 0.6686 CC 0.7241 mean 0.7085
+[final 06:16:16 +    39s] test  SPROF-GO                                         MF 0.6151 BP 0.4003 CC 0.6085 mean 0.5413
+[final 06:16:16 +    39s] test identity-bin sizes {'no_hit': 233, '<30': 72, '30-50': 656, '50-80': 1511, '80-95': 1305, '95-99.9': 2534, '100': 2319}
+[final 06:16:25 +    48s] test bootstrap TraceGO retrieval only (embedding kNN vote) - DIAMOND kNN train+val (repo): -0.0160 [-0.0195, -0.0121]
+[final 06:16:34 +    56s] test bootstrap TraceGO retrieval only (embedding kNN vote) - HiGO-R2 (prelim): -0.0132 [-0.0175, -0.0088]
+[final 06:17:16 +    98s] test extended TraceGO retrieval only (embedding kNN vote): Fmax(unweighted) 0.7596 S-min(IA) 8.485 AUPR 0.6024 AUC 0.8665 MCC 0.7262 AUPR prev<20 0.6348 prev20-100 0.6664
+[final 06:17:50 +   133s] test extended DIAMOND kNN train+val (repo): Fmax(unweighted) 0.7633 S-min(IA) 8.478 AUPR 0.6073 AUC 0.8610 MCC 0.7349 AUPR prev<20 0.6486 prev20-100 0.6730
+[final 06:18:25 +   167s] test extended HiGO-R2 (prelim): Fmax(unweighted) 0.7651 S-min(IA) 7.562 AUPR 0.6516 AUC 0.8651 MCC 0.7533 AUPR prev<20 0.6381 prev20-100 0.6947
+[final 06:18:31 +   174s] fr24p TraceGO retrieval only (embedding kNN vote)      MF 0.5935 BP 0.2851 CC 0.5778 mean 0.4855
+[final 06:18:36 +   179s] fr24p ablation: classifier head only (no decoder)      MF 0.6036 BP 0.2931 CC 0.5715 mean 0.4894
+[final 06:18:44 +   186s] fr24p SPROF-GO                                         MF 0.6022 BP 0.3133 CC 0.6286 mean 0.5147
+[final 06:18:48 +   190s] fr24p HiGO-R2 / Ontologue (prelim)                     MF 0.5715 BP 0.3031 CC 0.5636 mean 0.4794
+[final 06:18:50 +   193s] fr24p Ontologue kNN                                    MF 0.6013 BP 0.2828 CC 0.4890 mean 0.4577
+[final 06:18:51 +   193s] fr24p GO-GPT ten-sample                                MF 0.5236 BP 0.2727 CC 0.6071 mean 0.4678
+[final 06:18:51 +   194s] fr24p BLAST-KNN train+val                              MF 0.4806 BP 0.2255 CC 0.4174 mean 0.3745
+[final 06:18:51 +   194s] fr24p identity-bin sizes {'no_hit': 2270, '<30': 415, '30-50': 2633, '50-80': 3036, '80-95': 1527, '95-99.9': 897, '100': 453}
+[final 06:19:02 +   204s] fr24p bootstrap TraceGO retrieval only (embedding kNN vote) - SPROF-GO: -0.0292 [-0.0340, -0.0239]
+[final 06:19:12 +   215s] fr24p bootstrap TraceGO retrieval only (embedding kNN vote) - HiGO-R2 / Ontologue (prelim): +0.0061 [+0.0013, +0.0103]
+[final 06:19:49 +   252s] fr24p extended TraceGO retrieval only (embedding kNN vote): Fmax(unweighted) 0.5943 S-min(IA) 12.615 AUPR 0.2768 AUC 0.7146 MCC 0.4828 AUPR prev<20 0.3183 prev20-100 0.3539
+[final 06:20:27 +   289s] fr24p extended SPROF-GO: Fmax(unweighted) 0.6240 S-min(IA) 11.953 AUPR 0.1294 AUC 0.6409 MCC 0.5294 AUPR prev<20 0.0011 prev20-100 0.1179
+[final 06:21:01 +   324s] fr24p extended HiGO-R2 / Ontologue (prelim): Fmax(unweighted) 0.5820 S-min(IA) 12.651 AUPR 0.2739 AUC 0.7082 MCC 0.4706 AUPR prev<20 0.3096 prev20-100 0.3319
+[final 06:21:01 +   324s] wrote /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/final

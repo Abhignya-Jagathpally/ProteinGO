@@ -1,0 +1,19 @@
+# B1 signal-peptide head (scripts/run_signal.py). Nested 3 x 2 cross-validation over the SignalP 6.0 partitions.
+name: signal
+esm: facebook/esm2_t12_35M_UR50D
+layer: -1               # last ESM2 layer (residue states, BOS/EOS dropped)
+regions: weak           # weak = SignalP-6.0-style multi-tag region rules; latent = grammar only (ablation)
+kingdom_mask: true      # eukaryotes: only Sec/SPI start states (unknown kingdom -> all)
+head:
+  d_in: 480
+  d: 128
+  kernel: 5
+  lstm: 128
+  dropout: 0.25
+train:
+  epochs: 40
+  batch: 128
+  lr: 1.0e-3
+  wd: 0.01
+  patience: 8
+  seed: 0

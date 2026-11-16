@@ -1,0 +1,57 @@
+# Full scale: all 112,983 v2 training proteins; references for test / fresh24 = GO-GPT train + val (133,054).
+name: full
+seed: 0
+data:
+  subset: 0
+encoder:
+  tag: lora35m
+  esm: facebook/esm2_t12_35M_UR50D
+  lora_r: 16
+  lora_from_layer: 8     # adapter on layers 9-12; layers 1-8 stay pretrained (shared residue codes)
+  n_latents: 16
+  depth: 2
+  def_init: true
+  ia_weight: true
+  lr_lora: 3.0e-4
+  lr_head: 1.0e-3
+  epochs: 4
+  max_tokens: 48000
+  max_batch: 96
+  ret_weight: 0.0        # the contrastive retrieval head lost to whitened mean-pool states on TV v2 (dev)
+  queue: 4096
+retrieval:
+  space: ca
+  rerank: true
+  code_layer: 8
+  code_dim: 64
+  mode: chainaa0.0       # identity along the embedding alignment: diagonal-run residue matches with the same amino acid
+  cands: 100
+  k_keep: 50
+  k: 8                   # neighbours shown to the decoder as evidence tokens
+  k_vote: 50             # neighbours in the copy-bias vote
+  T: 0.05           # vote sharpening (chain-identity units), chosen on TV v2
+  kmer: false            # Phase A3 exact 8-mer channel (enable when rebuilding evidence_ca_k8)
+  kmer_k: 8
+  kmer_top: 20
+  kmer_max_occ: 256
+  kmer_comb: max         # max(chain-identity, k-mer query coverage) after candidate union
+  curriculum_unmasked: 0.25
+decoder:
+  t5: google/flan-t5-small
+  max_src: 320
+  max_tgt: 128
+  leaves_per_nb: 8
+  epochs: 5
+  batch: 128
+  lr: 5.0e-4
+  constrained: true
+  def_init: true
+  ia_weight: true
+  evidence: true
+  copy_bias: true
+  soft_prompt: true
+  member_positions: 4
+  shift_weight: true     # resample training queries to the TV top-1 evidence-score distribution
+  member_weight: 1.0
+  aux_evidence: false    # Phase B signal/loc tokens from runs/aux/ (off until those files exist)
+  homology_token: false  # Phase A1: <hom_*> + best-sim token (on for curriculum decoder training)

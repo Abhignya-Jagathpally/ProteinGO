@@ -1,0 +1,33 @@
+[decB 05:06:57 +     0s] run dec_main: decoder google/flan-t5-small; constrained True; evidence True; copy bias True; def init True; IA weight True; soft prompt True
+[decB 05:06:57 +     1s] spaces: ['enc_lora35m_f0', 'enc_lora35m_f1']; latents (27426, 16, 512); evidence keys ['train_q', 'tv_q']
+W1116 05:07:01.532000 1570504 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1116 05:07:01.564000 1570504 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+Loading weights:   0%|          | 0/190 [00:00<?, ?it/s]Loading weights: 100%|██████████| 190/190 [00:00<00:00, 9307.29it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+[decB 05:07:06 +     9s] definition-text init of 7,901 GO tokens; e.g. GO:0110165 <- 'cellular anatomical entity cellular anatomical entity A part of a cellular organ'
+[decB 05:07:06 +     9s] tokenizer 40,035 tokens; trainable params 69.1M (T5 64.6M)
+[decB 05:07:30 +    34s] reference leaves built in 25s
+[decB 05:07:33 +    37s] instruction sets built in 3s: {('train', 0): 10019, ('tv', 0): 7566, ('train', 1): 9981, ('tv', 1): 7566}
+[decB 05:07:33 +    37s] sample source (MF, protein Q61468, 37 tokens + 16 soft): Instruction: list the molecular function GO terms of this protein. Organism: Mus musculus. Evidence:<nb><sim_11><tax_class>GO:0005515<nb><sim_7><tax_class>GO:0019842GO:0003779GO:0005496</s>
+[decB 05:07:33 +    37s] BP source length p50 59 p99 94 max 116
+[decB 05:07:33 +    37s] namespace F: 1,099 terms; roots 22; mean in-vocab ancestors 4.8
+[decB 05:07:33 +    37s] namespace P: 5,960 terms; roots 18; mean in-vocab ancestors 11.7
+[decB 05:07:33 +    37s] namespace C: 842 terms; roots 3; mean in-vocab ancestors 8.8
+[decB 05:07:34 +    37s] training examples 37,722 (F 11,376 P 12,683 C 13,663)
+[decB 05:07:34 +    37s] sample target (F, Q61468): [np.str_('GO:0005488'), np.str_('GO:0005515')] ... (len 2); vote nnz 63
+/home/aj0486@students.ad.unt.edu/PFA/tracego/tracego/train/train_decoder.py:366: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:822.)
+  tot["next"] += float(l_next) * len(bx)
+[decB 05:08:25 +    88s] ep 0 step 500/3174 next 9.0026 member 0.2069 lr 4.70e-04
+[decB 05:08:48 +   111s] epoch 0: loss next 8.7904 member 0.2056; train 52s eval 20s; TV v2 (vocab terms) step0: MF 0.6037 BP 0.3868 CC 0.5578 mean 0.5161 test-like 0.4827
+[decB 05:09:31 +   155s] ep 1 step 1000/3174 next 3.7501 member 0.1901 lr 3.87e-04
+[decB 05:09:56 +   179s] epoch 1: loss next 3.7375 member 0.1896; train 49s eval 18s; TV v2 (vocab terms) step0: MF 0.6104 BP 0.3886 CC 0.5597 mean 0.5196 test-like 0.4868
+[decB 05:10:38 +   222s] ep 2 step 1500/3174 next 3.2507 member 0.1820 lr 2.72e-04
+[decB 05:11:06 +   249s] epoch 2: loss next 3.2157 member 0.1802; train 51s eval 19s; TV v2 (vocab terms) step0: MF 0.6089 BP 0.3897 CC 0.5600 mean 0.5195 test-like 0.4873
+[decB 05:11:47 +   290s] ep 3 step 2000/3174 next 2.9267 member 0.1717 lr 1.51e-04
+[decB 05:12:19 +   322s] epoch 3: loss next 2.9084 member 0.1721; train 53s eval 20s; TV v2 (vocab terms) step0: MF 0.6109 BP 0.3907 CC 0.5605 mean 0.5207 test-like 0.4886
+[decB 05:12:52 +   355s] ep 4 step 2500/3174 next 2.7649 member 0.1700 lr 5.36e-05
+[decB 05:13:21 +   384s] epoch 4: loss next 2.7472 member 0.1687; train 46s eval 17s; TV v2 (vocab terms) step0: MF 0.6112 BP 0.3913 CC 0.5605 mean 0.5210 test-like 0.4889
+[decB 05:13:51 +   415s] ep 5 step 3000/3174 next 2.7172 member 0.1687 lr 3.70e-06
+[decB 05:16:12 +   555s] epoch 5: loss next 2.6930 member 0.1665; train 45s eval 126s; TV v2 (vocab terms) step0: MF 0.6115 BP 0.3912 CC 0.5605 mean 0.5211 test-like 0.4890; ccms: MF 0.6104 BP 0.3732 CC 0.5548 mean 0.5128 test-like 0.4799; mix: MF 0.6140 BP 0.3916 CC 0.5615 mean 0.5223 test-like 0.4891
+[decB 05:16:12 +   556s] saved -> /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/dev20k/dec_main; total 556s

@@ -1,0 +1,39 @@
+[rerank 04:49:23 +     4s] recall of DIAMOND best hit in pooled top-1: 0.730
+[rerank 04:49:23 +     4s] recall of DIAMOND best hit in pooled top-5: 0.896
+[rerank 04:49:23 +     4s] recall of DIAMOND best hit in pooled top-10: 0.916
+[rerank 04:49:23 +     4s] recall of DIAMOND best hit in pooled top-50: 0.944
+[rerank 04:49:23 +     4s] recall of DIAMOND best hit in pooled top-100: 0.955
+W1116 04:49:28.259000 1557855 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1116 04:49:28.291000 1557855 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+Loading weights:   0%|          | 0/198 [00:00<?, ?it/s]Loading weights: 100%|██████████| 198/198 [00:00<00:00, 11350.21it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t12_35M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[rerank 04:52:44 +   205s] residue codes layer 8 dim 64 for 114,043 proteins in 201s
+[rerank 04:53:06 +   227s] MaxSim for 7,566 x 100 pairs in 22s
+[rerank 04:53:06 +   227s] recall of DIAMOND best hit in re-ranked (q2c) top-1: 0.815
+[rerank 04:53:06 +   227s] recall of DIAMOND best hit in re-ranked (sym) top-1: 0.798
+[rerank 04:53:06 +   227s] recall of DIAMOND best hit in re-ranked (min) top-1: 0.773
+[rerank 04:53:06 +   227s] recall of DIAMOND best hit in re-ranked (q2c) top-5: 0.926
+[rerank 04:53:06 +   227s] recall of DIAMOND best hit in re-ranked (sym) top-5: 0.929
+[rerank 04:53:06 +   227s] recall of DIAMOND best hit in re-ranked (min) top-5: 0.901
+[rerank 04:53:10 +   231s] re-ranked (q2c) kNN T=0.005 k=50: mean 0.7027 test-like 0.6892 (MF 0.7241 BP 0.6461 CC 0.7380)
+[rerank 04:53:12 +   233s] re-ranked (q2c) kNN T=0.01 k=50: mean 0.7086 test-like 0.6942 (MF 0.7352 BP 0.6495 CC 0.7409)
+[rerank 04:53:16 +   237s] re-ranked (q2c) kNN T=0.02 k=50: mean 0.7104 test-like 0.6998 (MF 0.7469 BP 0.6477 CC 0.7366)
+[rerank 04:53:19 +   240s] bins (q2c, T=0.01 k=50): {'no_hit': (91, 0.41230063835093667), '<30': (69, 0.5376817138307476), '30-50': (244, 0.508283277676601), '50-80': (301, 0.5341607161421121), '80-95': (1634, 0.6784694660483632), '95-99.9': (2664, 0.7553620180939538), '100': (2563, 0.7192429416852478)}
+[rerank 04:53:20 +   241s] re-ranked (sym) kNN T=0.005 k=50: mean 0.7052 test-like 0.6918 (MF 0.7255 BP 0.6494 CC 0.7408)
+[rerank 04:53:23 +   244s] re-ranked (sym) kNN T=0.01 k=50: mean 0.7113 test-like 0.6976 (MF 0.7380 BP 0.6529 CC 0.7429)
+[rerank 04:53:26 +   247s] re-ranked (sym) kNN T=0.02 k=50: mean 0.7125 test-like 0.6970 (MF 0.7475 BP 0.6495 CC 0.7405)
+[rerank 04:53:28 +   250s] bins (sym, T=0.01 k=50): {'no_hit': (91, 0.4187307058369247), '<30': (69, 0.5320654488398309), '30-50': (244, 0.5156235602426699), '50-80': (301, 0.5264936356811006), '80-95': (1634, 0.6803540363735056), '95-99.9': (2664, 0.7570115426345634), '100': (2563, 0.7224777297232077)}
+[rerank 04:53:30 +   251s] re-ranked (max) kNN T=0.005 k=50: mean 0.7110 test-like 0.6941 (MF 0.7289 BP 0.6563 CC 0.7478)
+[rerank 04:53:33 +   254s] re-ranked (max) kNN T=0.01 k=50: mean 0.7175 test-like 0.7064 (MF 0.7414 BP 0.6597 CC 0.7512)
+[rerank 04:53:36 +   257s] re-ranked (max) kNN T=0.02 k=50: mean 0.7191 test-like 0.7045 (MF 0.7523 BP 0.6578 CC 0.7471)
+[rerank 04:53:39 +   260s] bins (max, T=0.01 k=50): {'no_hit': (91, 0.4248450581161894), '<30': (69, 0.5491803069446027), '30-50': (244, 0.5047995455757218), '50-80': (301, 0.53034512842406), '80-95': (1634, 0.6818716657950189), '95-99.9': (2664, 0.7600634490343152), '100': (2563, 0.7359512664218579)}

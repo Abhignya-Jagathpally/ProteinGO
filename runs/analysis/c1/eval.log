@@ -1,0 +1,44 @@
+[c1eval 08:59:10 +     0s] disk free 9.7 GB
+[c1eval 08:59:11 +     0s] sites proteins 1,862; AA prior top ['D', 'C', 'H', 'K', 'E', 'R', 'S', 'G']
+[c1eval 08:59:11 +     0s] eval items 3,788 across 1,525 proteins
+W1116 08:59:15.598000 1698801 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1116 08:59:15.630000 1698801 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+Loading weights:   0%|          | 0/198 [00:00<?, ?it/s]Loading weights: 100%|██████████| 198/198 [00:00<00:00, 12212.83it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t12_35M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[godefs] cache hit (7901, 512) /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/cache/go_def_t5.npy
+[godefs] latent init: {'F': 4, 'P': 9, 'C': 3} centroids, shape (16, 512)
+[c1eval 08:59:18 +     8s] loaded /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/analysis/c1/control_best.pt epoch 2
+[c1eval 08:59:18 +     8s] loaded /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/analysis/c1/competitive_best.pt epoch 2
+[c1eval 08:59:25 +    15s] collapsed mean att_corr 0.893
+[c1eval 08:59:26 +    16s] control: profiles 224/1,525
+[c1eval 08:59:26 +    16s] control: profiles 416/1,525
+[c1eval 08:59:26 +    16s] control: profiles 608/1,525
+[c1eval 08:59:27 +    17s] control: profiles 800/1,525
+[c1eval 08:59:27 +    17s] control: profiles 1,024/1,525
+[c1eval 08:59:28 +    18s] control: profiles 1,216/1,525
+[c1eval 08:59:29 +    19s] control: profiles 1,408/1,525
+[c1eval 08:59:29 +    19s] control mean att_corr 0.971
+[c1eval 08:59:30 +    20s] competitive: profiles 224/1,525
+[c1eval 08:59:30 +    20s] competitive: profiles 416/1,525
+[c1eval 08:59:31 +    21s] competitive: profiles 608/1,525
+[c1eval 08:59:31 +    21s] competitive: profiles 800/1,525
+[c1eval 08:59:32 +    22s] competitive: profiles 1,024/1,525
+[c1eval 08:59:32 +    22s] competitive: profiles 1,216/1,525
+[c1eval 08:59:33 +    23s] competitive: profiles 1,408/1,525
+[c1eval 08:59:34 +    23s] competitive mean att_corr 0.063
+[c1eval 08:59:34 +    24s] collapsed: n=3788 term@k_sites prec 0.0245 rec 0.0248; rand prec 0.0114; aa prec 0.0318; uniform prec 0.0247
+[c1eval 08:59:34 +    24s] control: n=3788 term@k_sites prec 0.0384 rec 0.0385; rand prec 0.0114; aa prec 0.0318; uniform prec 0.0380
+[c1eval 08:59:34 +    24s] competitive: n=3788 term@k_sites prec 0.0249 rec 0.0251; rand prec 0.0114; aa prec 0.0318; uniform prec 0.0130
+[c1eval 08:59:34 +    24s] wrote /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/analysis/c1/trace_compare.tsv (3788 rows)
+[c1eval 08:59:35 +    25s] wrote /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/analysis/c1/trace_metrics.png
+[c1eval 08:59:35 +    25s] done; disk free 9.7 GB

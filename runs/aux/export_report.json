@@ -1,0 +1,30 @@
+{
+ "train": {
+  "n": 112983,
+  "signal": "/home/aj0486@students.ad.unt.edu/PFA/tracego/runs/aux/signal_train.npz",
+  "loc": "/home/aj0486@students.ad.unt.edu/PFA/tracego/runs/aux/loc_train.npz",
+  "mean_sp": 0.13659757375717163,
+  "mean_loc_ge_0.5": 1.0627085490737544
+ },
+ "tv": {
+  "n": 7566,
+  "signal": "/home/aj0486@students.ad.unt.edu/PFA/tracego/runs/aux/signal_tv.npz",
+  "loc": "/home/aj0486@students.ad.unt.edu/PFA/tracego/runs/aux/loc_tv.npz",
+  "mean_sp": 0.1311752200126648,
+  "mean_loc_ge_0.5": 1.092122653978324
+ },
+ "test": {
+  "n": 8630,
+  "signal": "/home/aj0486@students.ad.unt.edu/PFA/tracego/runs/aux/signal_test.npz",
+  "loc": "/home/aj0486@students.ad.unt.edu/PFA/tracego/runs/aux/loc_test.npz",
+  "mean_sp": 0.152926504611969,
+  "mean_loc_ge_0.5": 1.0646581691772885
+ },
+ "fr24p": {
+  "n": 11231,
+  "signal": "/home/aj0486@students.ad.unt.edu/PFA/tracego/runs/aux/signal_fr24p.npz",
+  "loc": "/home/aj0486@students.ad.unt.edu/PFA/tracego/runs/aux/loc_fr24p.npz",
+  "mean_sp": 0.15637433528900146,
+  "mean_loc_ge_0.5": 1.0447867509571722
+ }
+}

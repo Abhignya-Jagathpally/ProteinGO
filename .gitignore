@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.venv/
+venv/
+
+# Secrets / local env
+.env
+.env.*
+*.pem
+credentials*
+secrets*
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Third-party binaries (install/download separately)
+third_party/mmseqs/bin/
+third_party/mmseqs/examples/
+third_party/mmseqs/userguide.pdf
+
+# Run artifact policy lives in runs/.gitignore (weights/caches ignored;
+# small result tables/docs under final/, phaseA/, analysis/, etc. kept).

@@ -1,0 +1,35 @@
+[d1 10:12:24 +     0s] ATLAS_info 1,938 chains; columns ['PDB', 'PDB_resolution', 'refinement_method', 'refinement_TMscore', 'length', 'UniProt', 'UniProt_entry', 'organism']...
+[d1 10:12:24 +     0s] disk free 8.4 GB; about to write ~0.50 GB
+[d1 10:12:24 +     0s] fetching RMSF for 80 chains (cap download 1.2 GB)
+[d1 10:17:47 +   323s] fetched usable 25/25; ~0.01 GB transferred
+[d1 10:22:23 +   599s] fetched usable 50/50; ~0.03 GB transferred
+[d1 10:27:31 +   907s] fetched usable 75/75; ~0.04 GB transferred
+[d1 10:28:49 +   985s] usable RMSF chains 80
+[d1 10:28:49 +   985s] split train chains 64 test 16 (by PDB id)
+W1116 10:28:53.927000 1754807 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1116 10:28:53.959000 1754807 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+Loading weights:   0%|          | 0/198 [00:00<?, ?it/s]Loading weights: 100%|██████████| 198/198 [00:00<00:00, 12170.77it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t12_35M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[d1 10:28:54 +   991s] RMSF head params 62,657; device cuda
+/home/aj0486@students.ad.unt.edu/PFA/tracego/scripts/analysis_d1_md.py:205: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  Y[j, 1:1 + len(y)] = torch.as_tensor(y, device=dev)
+[d1 10:28:56 +   992s] epoch 0: loss 6.5226; train P/S 0.153/0.247; test P/S 0.095/0.179 (baseline 0.229/0.227)
+[d1 10:28:56 +   992s] epoch 1: loss 4.5499; train P/S 0.236/0.336; test P/S 0.148/0.213 (baseline 0.229/0.227)
+[d1 10:28:56 +   993s] epoch 2: loss 4.2906; train P/S 0.318/0.412; test P/S 0.197/0.252 (baseline 0.229/0.227)
+[d1 10:28:57 +   993s] epoch 3: loss 4.4853; train P/S 0.385/0.463; test P/S 0.236/0.280 (baseline 0.229/0.227)
+[d1 10:28:57 +   993s] epoch 4: loss 4.0919; train P/S 0.448/0.501; test P/S 0.283/0.309 (baseline 0.229/0.227)
+[d1 10:28:57 +   994s] epoch 5: loss 3.7327; train P/S 0.501/0.524; test P/S 0.318/0.324 (baseline 0.229/0.227)
+[d1 10:28:58 +   994s] epoch 6: loss 3.5086; train P/S 0.530/0.531; test P/S 0.336/0.325 (baseline 0.229/0.227)
+[d1 10:28:58 +   994s] epoch 7: loss 3.3793; train P/S 0.547/0.535; test P/S 0.347/0.323 (baseline 0.229/0.227)
+[d1 10:28:58 +   994s] site flexibility cases 1; mean site-other Δz -0.342
+[d1 10:28:58 +   994s] done; disk free 8.2 GB

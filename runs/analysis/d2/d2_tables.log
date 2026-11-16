@@ -1,0 +1,47 @@
+[d2 08:42:36 +     0s] disk free 10.1 GB; out /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/analysis/d2
+[d2 08:42:41 +     5s] vote TV mean 0.7250 test-like 0.7158
+[d2 08:42:43 +     7s] tracego TV mean 0.7251 test-like 0.7152
+[d2 08:42:43 +     7s] LCA groups: {np.str_('class'): np.int64(886), np.str_('family'): np.int64(487), np.str_('genus'): np.int64(15), np.str_('kingdom'): np.int64(185), np.str_('none'): np.int64(36), np.str_('order'): np.int64(10), np.str_('phylum'): np.int64(204), np.str_('species'): np.int64(5570), np.str_('superkingdom'): np.int64(168), np.str_('unmapped'): np.int64(5)}
+[d2 08:42:43 +     7s] missing ranks: {'species': {'query': 5, 'neighbour': 6, 'either': 7}, 'genus': {'query': 3, 'neighbour': 4, 'either': 5}, 'family': {'query': 3, 'neighbour': 4, 'either': 5}, 'order': {'query': 3, 'neighbour': 5, 'either': 6}, 'class': {'query': 4, 'neighbour': 6, 'either': 7}, 'phylum': {'query': 3, 'neighbour': 4, 'either': 5}, 'kingdom': {'query': 80, 'neighbour': 100, 'either': 102}, 'superkingdom': {'query': 22, 'neighbour': 29, 'either': 31}}
+[d2 08:42:43 +     7s] fold0 vs fold1 LCA agreement 0.988
+[d2 08:42:43 +     7s] LCA x vote:
+       group    n     MF     BP     CC   mean    ppF
+     species 5570 0.8121 0.7819 0.8289 0.8076 0.7664
+       genus   15 0.8065 0.8386 0.9413 0.8622 0.7884
+      family  487 0.6202 0.3749 0.5519 0.5157 0.3890
+       order   10 0.4590 0.3398 0.6271 0.4753 0.4399
+       class  886 0.5974 0.3782 0.5273 0.5010 0.3961
+      phylum  204 0.6620 0.3568 0.5485 0.5224 0.3860
+     kingdom  185 0.6046 0.3209 0.5006 0.4754 0.3526
+superkingdom  168 0.5642 0.3519 0.4987 0.4716 0.3552
+        none   36 0.4696 0.3626 0.4390 0.4237 0.2879
+    unmapped    5 0.5589 0.3594 0.9006 0.6063 0.3660
+[d2 08:42:43 +     7s] ppF LCA x id (vote):
+b               <50   50-80   80-95  95-100
+a                                          
+species      0.4957  0.4457  0.7113  0.7971
+genus           NaN  0.6967  0.6334  0.8596
+family       0.5409  0.3252  0.3583  0.3983
+order-class  0.4372  0.3931  0.4125  0.3854
+phylum+      0.3773  0.4263  0.3532  0.2975
+unmapped     0.0000     NaN  1.0000  0.2766
+counts:
+b            <50  50-80  80-95  95-100
+a                                     
+species      120    105   1141    4204
+genus          0      1      4      10
+family         7     12    117     351
+order-class   39     81    271     505
+phylum+      237    102    100     154
+unmapped       1      0      1       3
+[d2 08:42:43 +     7s] same-species best nb 0.736; DIAMOND best_same_org 0.727; agreement 0.915
+[d2 08:42:43 +     7s] vote ortho/para:
+           kind    n     MF     BP     CC   mean    ppF
+ paralogue_like 5570 0.8121 0.7819 0.8289 0.8076 0.7664
+orthologue_like 1991 0.6022 0.3687 0.5269 0.4993 0.3870
+[d2 08:42:43 +     7s] tracego ortho/para:
+           kind    n     MF     BP     CC   mean    ppF
+ paralogue_like 5570 0.8093 0.7830 0.8287 0.8070 0.7652
+orthologue_like 1991 0.5983 0.3679 0.5316 0.4993 0.3890
+[d2 08:42:44 +     7s] wrote /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/analysis/d2/fmax_vs_lca.png
+[d2 08:42:44 +     7s] skip-loo; done

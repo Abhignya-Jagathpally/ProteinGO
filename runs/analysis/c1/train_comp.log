@@ -1,0 +1,38 @@
+[c1train 08:46:15 +     0s] disk free 10.0 GB; out /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/analysis/c1
+[c1train 08:46:15 +     1s] 20k subset 20,000; TV 7,566; vocab 7,901; disk 10.0 GB
+W1116 08:46:22.062000 1683900 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1116 08:46:22.093000 1683900 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+Loading weights:   0%|          | 0/198 [00:00<?, ?it/s]Loading weights: 100%|██████████| 198/198 [00:00<00:00, 11805.03it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t12_35M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[c1train 08:46:45 +    31s] collapsed fold-0: att_corr 0.899; TV head MF 0.5193 BP 0.3016 CC 0.4907 mean 0.4372 test-like 0.4142
+[godefs] cache hit (7901, 512) /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/cache/go_def_t5.npy
+[godefs] latent init: {'F': 4, 'P': 9, 'C': 3} centroids, shape (16, 512)
+[c1train 08:46:46 +    31s] control_best.pt exists; skip control retrain
+[c1train 08:46:46 +    31s] competitive: 12.98M trainable; 20,000 proteins; 3 epochs x 334 steps; competitive=True div_w=0.25
+[c1train 08:47:00 +    45s] competitive ep 0 step 100/1002 cls 0.0282 div 0.3062 lr 9.76e-04
+[c1train 08:47:14 +    59s] competitive ep 0 step 200/1002 cls 0.0265 div 0.1598 lr 9.05e-04
+[c1train 08:47:28 +    73s] competitive ep 0 step 300/1002 cls 0.0257 div 0.1088 lr 7.95e-04
+[c1train 08:47:49 +    94s] competitive epoch 0 done in 63s: cls 0.0256 div 0.0982; att_corr 0.062; TV head MF 0.3848 BP 0.2478 CC 0.3860 mean 0.3395 test-like 0.3268
+[c1train 08:47:49 +    94s] competitive: new best test-like 0.3268 -> /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/analysis/c1/competitive_best.pt
+[c1train 08:47:58 +   103s] competitive ep 1 step 400/1002 cls 0.0242 div 0.0038 lr 6.56e-04
+[c1train 08:48:12 +   117s] competitive ep 1 step 500/1002 cls 0.0237 div 0.0043 lr 5.02e-04
+[c1train 08:48:26 +   131s] competitive ep 1 step 600/1002 cls 0.0234 div 0.0038 lr 3.47e-04
+[c1train 08:48:53 +   158s] competitive epoch 1 done in 64s: cls 0.0231 div 0.0036; att_corr 0.063; TV head MF 0.4333 BP 0.2649 CC 0.4414 mean 0.3799 test-like 0.3618
+[c1train 08:48:53 +   158s] competitive: new best test-like 0.3618 -> /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/analysis/c1/competitive_best.pt
+[c1train 08:48:57 +   163s] competitive ep 2 step 700/1002 cls 0.0232 div 0.0027 lr 2.08e-04
+[c1train 08:49:12 +   177s] competitive ep 2 step 800/1002 cls 0.0227 div 0.0024 lr 9.70e-05
+[c1train 08:49:25 +   190s] competitive ep 2 step 900/1002 cls 0.0225 div 0.0026 lr 2.54e-05
+[c1train 08:49:38 +   203s] competitive ep 2 step 1000/1002 cls 0.0223 div 0.0026 lr 9.83e-09
+[c1train 08:50:01 +   226s] competitive epoch 2 done in 68s: cls 0.0223 div 0.0026; att_corr 0.063; TV head MF 0.4494 BP 0.2688 CC 0.4410 mean 0.3864 test-like 0.3676
+[c1train 08:50:01 +   227s] competitive: new best test-like 0.3676 -> /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/analysis/c1/competitive_best.pt
+[c1train 08:50:01 +   227s] done; disk free 9.8 GB; artefacts in /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/analysis/c1

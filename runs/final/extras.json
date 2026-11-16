@@ -1,0 +1,36 @@
+{
+ "frozen": {
+  "NMI": 0.2139211134491197,
+  "ARI": 0.11285732045195965,
+  "silhouette_cos": -0.08520335704088211
+ },
+ "adapted": {
+  "NMI": 0.2632555485033737,
+  "ARI": 0.13908014264606805,
+  "silhouette_cos": -0.12019958347082138
+ },
+ "latents": {
+  "NMI": 0.3599414164405986,
+  "ARI": 0.22296859013323228,
+  "silhouette_cos": -0.0925799086689949
+ },
+ "CKA_frozen_vs_adapted": 0.7563529014587402,
+ "CKA_frozen_vs_latents": 0.3583295941352844,
+ "classes": [
+  "nucleic acid binding",
+  "DNA binding",
+  "sequence-specific DNA binding",
+  "RNA binding",
+  "double-stranded DNA binding",
+  "kinase activity",
+  "phosphotransferase activity, alcohol group as acceptor",
+  "transcription regulatory region nucleic acid binding",
+  "metal ion binding",
+  "nucleotide binding",
+  "nucleoside phosphate binding",
+  "monoatomic cation transmembrane transporter activity",
+  "mRNA binding",
+  "inorganic cation transmembrane transporter activity",
+  "peptidase activity"
+ ]
+}

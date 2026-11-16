@@ -1,0 +1,45 @@
+[encA 05:56:06 +     0s] config full encoder frozen35m fold 0: training proteins 56,432 of 112,983 (other fold 56,551 held out from this adapter)
+[encA 05:56:06 +     1s] labels: vocab 7,901; mean terms/protein 34.6; known namespaces F/P/C [0.573, 0.637, 0.678]; seq len p50 410
+[encA 05:56:06 +     1s] sample protein E9Q6A7: MRGRRGRPPKQPAAPAAERCAPAPPPPPPPPPPPPPPPPPPPPASGPIGG... terms ['GO:0001892', 'GO:0007492', 'GO:0001890', 'GO:0001701', 'GO:0009952', 'GO:0048568']
+W1116 05:56:11.613000 1593448 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1116 05:56:11.646000 1593448 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+[godefs] cache hit (7901, 512) /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/cache/go_def_t5.npy
+[godefs] latent init: {'F': 4, 'P': 9, 'C': 3} centroids, shape (16, 512)
+Loading weights:   0%|          | 0/198 [00:00<?, ?it/s]Loading weights: 100%|██████████| 198/198 [00:00<00:00, 12056.80it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t12_35M_UR50D
+Key                       | Status     |  | 
+--------------------------+------------+--+-
+lm_head.bias              | UNEXPECTED |  | 
+lm_head.layer_norm.weight | UNEXPECTED |  | 
+lm_head.dense.weight      | UNEXPECTED |  | 
+lm_head.dense.bias        | UNEXPECTED |  | 
+lm_head.layer_norm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+[encA 05:56:12 +     7s] params: ESM 33.3M (trainable 0.000M, LoRA r=0); resampler 8.67M; total trainable 13.75M; def-text init True
+[encA 05:56:12 +     7s] optimiser: 4 epochs x 746 steps; warmup 298
+[encA 05:56:58 +    53s] ep 0 step 200/2984 cls 0.0276 ret 8.1467 tau 0.082 batch 96 lr 6.67e-04
+[encA 05:57:36 +    90s] ep 0 step 400/2984 cls 0.0255 ret 8.4349 tau 0.083 batch 96 lr 9.56e-04
+[encA 05:58:11 +   126s] ep 0 step 600/2984 cls 0.0245 ret 8.6164 tau 0.083 batch 96 lr 9.04e-04
+[encA 05:58:58 +   173s] epoch 0 done in 164s: loss cls 0.0240 ret 8.6978; TV v2 head-only IA-Fmax MF 0.4853 BP 0.2777 CC 0.4487 mean 0.4039 test-like 0.3846
+[encA 05:59:06 +   181s] ep 1 step 800/2984 cls 0.0213 ret 8.8762 tau 0.083 batch 96 lr 8.33e-04
+[encA 05:59:37 +   212s] ep 1 step 1000/2984 cls 0.0216 ret 9.0129 tau 0.084 batch 69 lr 7.48e-04
+[encA 06:00:07 +   241s] ep 1 step 1200/2984 cls 0.0217 ret 9.0106 tau 0.084 batch 96 lr 6.51e-04
+[encA 06:00:35 +   270s] ep 1 step 1400/2984 cls 0.0216 ret 8.9836 tau 0.084 batch 96 lr 5.48e-04
+[encA 06:01:06 +   300s] epoch 1 done in 127s: loss cls 0.0215 ret 8.9756; TV v2 head-only IA-Fmax MF 0.4974 BP 0.2887 CC 0.4842 mean 0.4234 test-like 0.4061
+[encA 06:01:23 +   318s] ep 2 step 1600/2984 cls 0.0210 ret 8.8546 tau 0.084 batch 46 lr 4.43e-04
+[encA 06:01:56 +   351s] ep 2 step 1800/2984 cls 0.0211 ret 8.8558 tau 0.085 batch 46 lr 3.41e-04
+[encA 06:02:25 +   380s] ep 2 step 2000/2984 cls 0.0208 ret 8.8367 tau 0.085 batch 54 lr 2.45e-04
+[encA 06:02:53 +   408s] ep 2 step 2200/2984 cls 0.0208 ret 8.8207 tau 0.085 batch 49 lr 1.61e-04
+[encA 06:03:14 +   429s] epoch 2 done in 129s: loss cls 0.0208 ret 8.8162; TV v2 head-only IA-Fmax MF 0.5118 BP 0.2955 CC 0.4836 mean 0.4303 test-like 0.4069
+[encA 06:03:36 +   451s] ep 3 step 2400/2984 cls 0.0204 ret 8.6480 tau 0.085 batch 96 lr 9.16e-05
+[encA 06:04:04 +   479s] ep 3 step 2600/2984 cls 0.0204 ret 8.6949 tau 0.085 batch 46 lr 4.03e-05
+[encA 06:04:31 +   506s] ep 3 step 2800/2984 cls 0.0203 ret 8.7008 tau 0.085 batch 96 lr 9.35e-06
+[encA 06:05:13 +   548s] epoch 3 done in 119s: loss cls 0.0203 ret 8.6963; TV v2 head-only IA-Fmax MF 0.5175 BP 0.2993 CC 0.4924 mean 0.4364 test-like 0.4125
+[encA 06:05:13 +   548s] saved 75 tensors -> /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/full/enc_frozen35m_f0/model.pt
+[encA 06:05:13 +   548s] caching Z / r / h for 152,915 proteins
+[encA 06:10:25 +   860s]   Z: (152915, 16, 512) float16 (2.51 GB); sample [-0.2974 -0.3862  1.405   0.9077]
+[encA 06:10:25 +   860s]   r: (152915, 512) float16 (0.16 GB); sample [ 0.01194  -0.006996 -0.0468    0.04175 ]
+[encA 06:10:25 +   860s]   h: (152915, 480) float16 (0.15 GB); sample [-0.01712 -0.0631  -0.00323  0.03036]
+[encA 06:10:25 +   860s] cache done in 312s -> /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/full/enc_frozen35m_f0

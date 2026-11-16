@@ -1,0 +1,365 @@
+W1116 09:44:45.562000 1729152 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1116 09:44:45.594000 1729152 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+[c2 09:44:45 +     5s] disk free 9.1 GB
+[c2 09:44:46 +     5s] TV subset 1,514; train embed 8,000
+[prostt5 09:44:46 +     5s] streaming ProstT5_fp16 pytorch_model.bin into RAM (not written to disk) ...
+[prostt5 09:44:47 +     6s] downloaded 0.05 GB of pytorch_model.bin
+[prostt5 09:44:48 +     7s] downloaded 0.10 GB of pytorch_model.bin
+[prostt5 09:44:49 +     8s] downloaded 0.16 GB of pytorch_model.bin
+[prostt5 09:44:49 +     8s] downloaded 0.21 GB of pytorch_model.bin
+[prostt5 09:44:50 +     9s] downloaded 0.26 GB of pytorch_model.bin
+[prostt5 09:44:50 +     9s] downloaded 0.31 GB of pytorch_model.bin
+[prostt5 09:44:51 +    10s] downloaded 0.37 GB of pytorch_model.bin
+[prostt5 09:44:53 +    12s] downloaded 0.42 GB of pytorch_model.bin
+[prostt5 09:44:55 +    14s] downloaded 0.47 GB of pytorch_model.bin
+[prostt5 09:44:55 +    14s] downloaded 0.52 GB of pytorch_model.bin
+[prostt5 09:44:55 +    15s] downloaded 0.58 GB of pytorch_model.bin
+[prostt5 09:44:56 +    15s] downloaded 0.63 GB of pytorch_model.bin
+[prostt5 09:44:58 +    17s] downloaded 0.68 GB of pytorch_model.bin
+[prostt5 09:44:58 +    17s] downloaded 0.73 GB of pytorch_model.bin
+[prostt5 09:44:59 +    18s] downloaded 0.79 GB of pytorch_model.bin
+[prostt5 09:44:59 +    18s] downloaded 0.84 GB of pytorch_model.bin
+[prostt5 09:44:59 +    19s] downloaded 0.89 GB of pytorch_model.bin
+[prostt5 09:45:00 +    19s] downloaded 0.94 GB of pytorch_model.bin
+[prostt5 09:45:00 +    19s] downloaded 1.00 GB of pytorch_model.bin
+[prostt5 09:45:01 +    20s] downloaded 1.05 GB of pytorch_model.bin
+[prostt5 09:45:01 +    20s] downloaded 1.10 GB of pytorch_model.bin
+[prostt5 09:45:02 +    21s] downloaded 1.15 GB of pytorch_model.bin
+[prostt5 09:45:03 +    22s] downloaded 1.21 GB of pytorch_model.bin
+[prostt5 09:45:05 +    24s] downloaded 1.26 GB of pytorch_model.bin
+[prostt5 09:45:05 +    24s] downloaded 1.31 GB of pytorch_model.bin
+[prostt5 09:45:06 +    25s] downloaded 1.36 GB of pytorch_model.bin
+[prostt5 09:45:06 +    25s] downloaded 1.42 GB of pytorch_model.bin
+[prostt5 09:45:07 +    26s] downloaded 1.47 GB of pytorch_model.bin
+[prostt5 09:45:07 +    26s] downloaded 1.52 GB of pytorch_model.bin
+[prostt5 09:45:08 +    27s] downloaded 1.57 GB of pytorch_model.bin
+[prostt5 09:45:08 +    27s] downloaded 1.63 GB of pytorch_model.bin
+[prostt5 09:45:09 +    28s] downloaded 1.68 GB of pytorch_model.bin
+[prostt5 09:45:10 +    29s] downloaded 1.73 GB of pytorch_model.bin
+[prostt5 09:45:10 +    29s] downloaded 1.78 GB of pytorch_model.bin
+[prostt5 09:45:11 +    30s] downloaded 1.84 GB of pytorch_model.bin
+[prostt5 09:45:11 +    30s] downloaded 1.89 GB of pytorch_model.bin
+[prostt5 09:45:12 +    31s] downloaded 1.94 GB of pytorch_model.bin
+[prostt5 09:45:12 +    31s] downloaded 1.99 GB of pytorch_model.bin
+[prostt5 09:45:12 +    31s] downloaded 2.04 GB of pytorch_model.bin
+[prostt5 09:45:13 +    32s] downloaded 2.10 GB of pytorch_model.bin
+[prostt5 09:45:13 +    32s] downloaded 2.15 GB of pytorch_model.bin
+[prostt5 09:45:14 +    33s] downloaded 2.20 GB of pytorch_model.bin
+[prostt5 09:45:14 +    33s] downloaded 2.25 GB of pytorch_model.bin
+[prostt5 09:45:15 +    34s] downloaded 2.31 GB of pytorch_model.bin
+[prostt5 09:45:15 +    34s] downloaded 2.36 GB of pytorch_model.bin
+[prostt5 09:45:17 +    36s] downloaded 2.41 GB of pytorch_model.bin
+[prostt5 09:45:17 +    36s] downloaded 2.46 GB of pytorch_model.bin
+[prostt5 09:45:18 +    37s] downloaded 2.52 GB of pytorch_model.bin
+[prostt5 09:45:18 +    37s] downloaded 2.57 GB of pytorch_model.bin
+[prostt5 09:45:19 +    38s] downloaded 2.62 GB of pytorch_model.bin
+[prostt5 09:45:24 +    43s] downloaded 2.67 GB of pytorch_model.bin
+[prostt5 09:45:26 +    45s] downloaded 2.73 GB of pytorch_model.bin
+[prostt5 09:45:27 +    46s] downloaded 2.78 GB of pytorch_model.bin
+[prostt5 09:45:28 +    47s] downloaded 2.83 GB of pytorch_model.bin
+[prostt5 09:45:29 +    48s] downloaded 2.88 GB of pytorch_model.bin
+[prostt5 09:45:30 +    49s] downloaded 2.94 GB of pytorch_model.bin
+[prostt5 09:45:30 +    49s] downloaded 2.99 GB of pytorch_model.bin
+[prostt5 09:45:31 +    50s] downloaded 3.04 GB of pytorch_model.bin
+[prostt5 09:45:32 +    51s] downloaded 3.09 GB of pytorch_model.bin
+[prostt5 09:45:33 +    52s] downloaded 3.15 GB of pytorch_model.bin
+[prostt5 09:45:33 +    53s] downloaded 3.20 GB of pytorch_model.bin
+[prostt5 09:45:34 +    53s] downloaded 3.25 GB of pytorch_model.bin
+[prostt5 09:45:36 +    55s] downloaded 3.30 GB of pytorch_model.bin
+[prostt5 09:45:36 +    55s] downloaded 3.36 GB of pytorch_model.bin
+[prostt5 09:45:37 +    56s] downloaded 3.41 GB of pytorch_model.bin
+[prostt5 09:45:37 +    56s] downloaded 3.46 GB of pytorch_model.bin
+[prostt5 09:45:38 +    57s] downloaded 3.51 GB of pytorch_model.bin
+[prostt5 09:45:42 +    61s] downloaded 3.57 GB of pytorch_model.bin
+[prostt5 09:45:50 +    70s] downloaded 3.62 GB of pytorch_model.bin
+[prostt5 09:45:51 +    70s] downloaded 3.67 GB of pytorch_model.bin
+[prostt5 09:45:52 +    71s] downloaded 3.72 GB of pytorch_model.bin
+[prostt5 09:45:52 +    71s] downloaded 3.77 GB of pytorch_model.bin
+[prostt5 09:45:52 +    72s] downloaded 3.83 GB of pytorch_model.bin
+[prostt5 09:45:53 +    72s] downloaded 3.88 GB of pytorch_model.bin
+[prostt5 09:45:54 +    73s] downloaded 3.93 GB of pytorch_model.bin
+[prostt5 09:45:56 +    75s] downloaded 3.98 GB of pytorch_model.bin
+[prostt5 09:45:57 +    76s] downloaded 4.04 GB of pytorch_model.bin
+[prostt5 09:45:58 +    77s] downloaded 4.09 GB of pytorch_model.bin
+[prostt5 09:45:58 +    77s] downloaded 4.14 GB of pytorch_model.bin
+[prostt5 09:45:59 +    78s] downloaded 4.19 GB of pytorch_model.bin
+[prostt5 09:45:59 +    79s] downloaded 4.25 GB of pytorch_model.bin
+[prostt5 09:46:02 +    81s] downloaded 4.30 GB of pytorch_model.bin
+[prostt5 09:46:02 +    81s] downloaded 4.35 GB of pytorch_model.bin
+[prostt5 09:46:17 +    96s] downloaded 4.40 GB of pytorch_model.bin
+[prostt5 09:46:21 +   100s] downloaded 4.46 GB of pytorch_model.bin
+[prostt5 09:46:23 +   102s] downloaded 4.51 GB of pytorch_model.bin
+[prostt5 09:46:25 +   104s] downloaded 4.56 GB of pytorch_model.bin
+[prostt5 09:46:26 +   105s] downloaded 4.61 GB of pytorch_model.bin
+[prostt5 09:46:41 +   120s] downloaded 4.67 GB of pytorch_model.bin
+[prostt5 09:46:49 +   128s] downloaded 4.72 GB of pytorch_model.bin
+[prostt5 09:46:49 +   128s] downloaded 4.77 GB of pytorch_model.bin
+[prostt5 09:46:50 +   129s] downloaded 4.82 GB of pytorch_model.bin
+[prostt5 09:46:50 +   129s] downloaded 4.88 GB of pytorch_model.bin
+[prostt5 09:46:50 +   130s] downloaded 4.93 GB of pytorch_model.bin
+[prostt5 09:46:51 +   130s] downloaded 4.98 GB of pytorch_model.bin
+[prostt5 09:46:51 +   130s] downloaded 5.03 GB of pytorch_model.bin
+[prostt5 09:46:52 +   131s] downloaded 5.09 GB of pytorch_model.bin
+[prostt5 09:46:52 +   132s] downloaded 5.14 GB of pytorch_model.bin
+[prostt5 09:46:53 +   132s] downloaded 5.19 GB of pytorch_model.bin
+[prostt5 09:46:53 +   132s] downloaded 5.24 GB of pytorch_model.bin
+[prostt5 09:46:54 +   133s] downloaded 5.30 GB of pytorch_model.bin
+[prostt5 09:46:55 +   134s] downloaded 5.35 GB of pytorch_model.bin
+[prostt5 09:46:57 +   136s] downloaded 5.40 GB of pytorch_model.bin
+[prostt5 09:46:58 +   137s] downloaded 5.45 GB of pytorch_model.bin
+[prostt5 09:46:59 +   138s] downloaded 5.51 GB of pytorch_model.bin
+[prostt5 09:46:59 +   138s] downloaded 5.56 GB of pytorch_model.bin
+[prostt5 09:46:59 +   139s] downloaded 5.61 GB of pytorch_model.bin
+[prostt5 09:47:04 +   143s] cached weights on /dev/shm (5.64 GB)
+[prostt5 09:47:04 +   143s] weights in RAM 5.64 GB; torch.load ...
+[prostt5 09:47:08 +   147s] kept 196 encoder/shared tensors; 2.42 GB
+[prostt5 09:47:23 +   162s] load_state_dict missing 0 unexpected 0
+[prostt5 09:47:24 +   163s] embedded 2/1,514
+[prostt5 09:47:25 +   164s] embedded 42/1,514
+[prostt5 09:47:26 +   165s] embedded 82/1,514
+[prostt5 09:47:27 +   166s] embedded 122/1,514
+[prostt5 09:47:28 +   167s] embedded 162/1,514
+[prostt5 09:47:30 +   169s] embedded 202/1,514
+[prostt5 09:47:30 +   169s] embedded 242/1,514
+[prostt5 09:47:31 +   170s] embedded 282/1,514
+[prostt5 09:47:32 +   171s] embedded 322/1,514
+[prostt5 09:47:34 +   173s] embedded 362/1,514
+[prostt5 09:47:35 +   174s] embedded 402/1,514
+[prostt5 09:47:36 +   175s] embedded 442/1,514
+[prostt5 09:47:37 +   176s] embedded 482/1,514
+[prostt5 09:47:38 +   177s] embedded 522/1,514
+[prostt5 09:47:39 +   178s] embedded 562/1,514
+[prostt5 09:47:40 +   179s] embedded 602/1,514
+[prostt5 09:47:41 +   180s] embedded 642/1,514
+[prostt5 09:47:42 +   181s] embedded 682/1,514
+[prostt5 09:47:43 +   182s] embedded 722/1,514
+[prostt5 09:47:44 +   183s] embedded 762/1,514
+[prostt5 09:47:45 +   184s] embedded 802/1,514
+[prostt5 09:47:46 +   185s] embedded 842/1,514
+[prostt5 09:47:47 +   186s] embedded 882/1,514
+[prostt5 09:47:48 +   188s] embedded 922/1,514
+[prostt5 09:47:49 +   188s] embedded 962/1,514
+[prostt5 09:47:50 +   189s] embedded 1,002/1,514
+[prostt5 09:47:51 +   191s] embedded 1,042/1,514
+[prostt5 09:47:52 +   192s] embedded 1,082/1,514
+[prostt5 09:47:54 +   193s] embedded 1,122/1,514
+[prostt5 09:47:55 +   194s] embedded 1,162/1,514
+[prostt5 09:47:56 +   195s] embedded 1,202/1,514
+[prostt5 09:47:57 +   196s] embedded 1,242/1,514
+[prostt5 09:47:58 +   197s] embedded 1,282/1,514
+[prostt5 09:47:59 +   198s] embedded 1,322/1,514
+[prostt5 09:48:00 +   199s] embedded 1,362/1,514
+[prostt5 09:48:01 +   200s] embedded 1,402/1,514
+[prostt5 09:48:02 +   201s] embedded 1,442/1,514
+[prostt5 09:48:04 +   203s] embedded 1,482/1,514
+[prostt5 09:48:04 +   203s] embedded 2/8,000
+[prostt5 09:48:06 +   205s] embedded 42/8,000
+[prostt5 09:48:07 +   206s] embedded 82/8,000
+[prostt5 09:48:08 +   207s] embedded 122/8,000
+[prostt5 09:48:09 +   208s] embedded 162/8,000
+[prostt5 09:48:10 +   209s] embedded 202/8,000
+[prostt5 09:48:11 +   210s] embedded 242/8,000
+[prostt5 09:48:12 +   211s] embedded 282/8,000
+[prostt5 09:48:13 +   212s] embedded 322/8,000
+[prostt5 09:48:14 +   213s] embedded 362/8,000
+[prostt5 09:48:15 +   214s] embedded 402/8,000
+[prostt5 09:48:16 +   215s] embedded 442/8,000
+[prostt5 09:48:18 +   217s] embedded 482/8,000
+[prostt5 09:48:19 +   218s] embedded 522/8,000
+[prostt5 09:48:20 +   219s] embedded 562/8,000
+[prostt5 09:48:21 +   220s] embedded 602/8,000
+[prostt5 09:48:22 +   221s] embedded 642/8,000
+[prostt5 09:48:23 +   222s] embedded 682/8,000
+[prostt5 09:48:24 +   223s] embedded 722/8,000
+[prostt5 09:48:25 +   224s] embedded 762/8,000
+[prostt5 09:48:26 +   225s] embedded 802/8,000
+[prostt5 09:48:27 +   226s] embedded 842/8,000
+[prostt5 09:48:28 +   227s] embedded 882/8,000
+[prostt5 09:48:29 +   228s] embedded 922/8,000
+[prostt5 09:48:30 +   229s] embedded 962/8,000
+[prostt5 09:48:31 +   230s] embedded 1,002/8,000
+[prostt5 09:48:32 +   231s] embedded 1,042/8,000
+[prostt5 09:48:33 +   232s] embedded 1,082/8,000
+[prostt5 09:48:34 +   233s] embedded 1,122/8,000
+[prostt5 09:48:35 +   234s] embedded 1,162/8,000
+[prostt5 09:48:36 +   235s] embedded 1,202/8,000
+[prostt5 09:48:37 +   236s] embedded 1,242/8,000
+[prostt5 09:48:38 +   237s] embedded 1,282/8,000
+[prostt5 09:48:39 +   238s] embedded 1,322/8,000
+[prostt5 09:48:40 +   239s] embedded 1,362/8,000
+[prostt5 09:48:41 +   240s] embedded 1,402/8,000
+[prostt5 09:48:43 +   242s] embedded 1,442/8,000
+[prostt5 09:48:44 +   243s] embedded 1,482/8,000
+[prostt5 09:48:45 +   244s] embedded 1,522/8,000
+[prostt5 09:48:46 +   245s] embedded 1,562/8,000
+[prostt5 09:48:47 +   246s] embedded 1,602/8,000
+[prostt5 09:48:48 +   247s] embedded 1,642/8,000
+[prostt5 09:48:49 +   248s] embedded 1,682/8,000
+[prostt5 09:48:50 +   249s] embedded 1,722/8,000
+[prostt5 09:48:51 +   250s] embedded 1,762/8,000
+[prostt5 09:48:52 +   251s] embedded 1,802/8,000
+[prostt5 09:48:53 +   252s] embedded 1,842/8,000
+[prostt5 09:48:54 +   253s] embedded 1,882/8,000
+[prostt5 09:48:55 +   254s] embedded 1,922/8,000
+[prostt5 09:48:56 +   255s] embedded 1,962/8,000
+[prostt5 09:48:57 +   256s] embedded 2,002/8,000
+[prostt5 09:48:58 +   257s] embedded 2,042/8,000
+[prostt5 09:48:59 +   258s] embedded 2,082/8,000
+[prostt5 09:49:00 +   259s] embedded 2,122/8,000
+[prostt5 09:49:01 +   260s] embedded 2,162/8,000
+[prostt5 09:49:02 +   261s] embedded 2,202/8,000
+[prostt5 09:49:03 +   262s] embedded 2,242/8,000
+[prostt5 09:49:04 +   263s] embedded 2,282/8,000
+[prostt5 09:49:05 +   264s] embedded 2,322/8,000
+[prostt5 09:49:06 +   265s] embedded 2,362/8,000
+[prostt5 09:49:07 +   266s] embedded 2,402/8,000
+[prostt5 09:49:08 +   267s] embedded 2,442/8,000
+[prostt5 09:49:09 +   268s] embedded 2,482/8,000
+[prostt5 09:49:10 +   269s] embedded 2,522/8,000
+[prostt5 09:49:11 +   270s] embedded 2,562/8,000
+[prostt5 09:49:12 +   271s] embedded 2,602/8,000
+[prostt5 09:49:13 +   272s] embedded 2,642/8,000
+[prostt5 09:49:14 +   273s] embedded 2,682/8,000
+[prostt5 09:49:15 +   274s] embedded 2,722/8,000
+[prostt5 09:49:16 +   275s] embedded 2,762/8,000
+[prostt5 09:49:17 +   276s] embedded 2,802/8,000
+[prostt5 09:49:18 +   278s] embedded 2,842/8,000
+[prostt5 09:49:20 +   279s] embedded 2,882/8,000
+[prostt5 09:49:21 +   280s] embedded 2,922/8,000
+[prostt5 09:49:22 +   281s] embedded 2,962/8,000
+[prostt5 09:49:23 +   282s] embedded 3,002/8,000
+[prostt5 09:49:24 +   283s] embedded 3,042/8,000
+[prostt5 09:49:26 +   285s] embedded 3,082/8,000
+[prostt5 09:49:27 +   286s] embedded 3,122/8,000
+[prostt5 09:49:27 +   286s] embedded 3,162/8,000
+[prostt5 09:49:28 +   287s] embedded 3,202/8,000
+[prostt5 09:49:29 +   289s] embedded 3,242/8,000
+[prostt5 09:49:31 +   290s] embedded 3,282/8,000
+[prostt5 09:49:32 +   291s] embedded 3,322/8,000
+[prostt5 09:49:33 +   292s] embedded 3,362/8,000
+[prostt5 09:49:34 +   293s] embedded 3,402/8,000
+[prostt5 09:49:35 +   294s] embedded 3,442/8,000
+[prostt5 09:49:36 +   295s] embedded 3,482/8,000
+[prostt5 09:49:37 +   296s] embedded 3,522/8,000
+[prostt5 09:49:38 +   297s] embedded 3,562/8,000
+[prostt5 09:49:39 +   298s] embedded 3,602/8,000
+[prostt5 09:49:40 +   299s] embedded 3,642/8,000
+[prostt5 09:49:41 +   300s] embedded 3,682/8,000
+[prostt5 09:49:42 +   301s] embedded 3,722/8,000
+[prostt5 09:49:43 +   302s] embedded 3,762/8,000
+[prostt5 09:49:44 +   303s] embedded 3,802/8,000
+[prostt5 09:49:45 +   304s] embedded 3,842/8,000
+[prostt5 09:49:46 +   306s] embedded 3,882/8,000
+[prostt5 09:49:48 +   307s] embedded 3,922/8,000
+[prostt5 09:49:49 +   308s] embedded 3,962/8,000
+[prostt5 09:49:49 +   309s] embedded 4,002/8,000
+[prostt5 09:49:50 +   310s] embedded 4,042/8,000
+[prostt5 09:49:51 +   311s] embedded 4,082/8,000
+[prostt5 09:49:53 +   312s] embedded 4,122/8,000
+[prostt5 09:49:53 +   312s] embedded 4,162/8,000
+[prostt5 09:49:54 +   313s] embedded 4,202/8,000
+[prostt5 09:49:56 +   315s] embedded 4,242/8,000
+[prostt5 09:49:56 +   316s] embedded 4,282/8,000
+[prostt5 09:49:57 +   316s] embedded 4,322/8,000
+[prostt5 09:49:58 +   317s] embedded 4,362/8,000
+[prostt5 09:49:59 +   319s] embedded 4,402/8,000
+[prostt5 09:50:01 +   320s] embedded 4,442/8,000
+[prostt5 09:50:02 +   321s] embedded 4,482/8,000
+[prostt5 09:50:03 +   322s] embedded 4,522/8,000
+[prostt5 09:50:04 +   323s] embedded 4,562/8,000
+[prostt5 09:50:05 +   324s] embedded 4,602/8,000
+[prostt5 09:50:06 +   325s] embedded 4,642/8,000
+[prostt5 09:50:07 +   326s] embedded 4,682/8,000
+[prostt5 09:50:08 +   327s] embedded 4,722/8,000
+[prostt5 09:50:09 +   328s] embedded 4,762/8,000
+[prostt5 09:50:10 +   329s] embedded 4,802/8,000
+[prostt5 09:50:11 +   330s] embedded 4,842/8,000
+[prostt5 09:50:12 +   331s] embedded 4,882/8,000
+[prostt5 09:50:13 +   332s] embedded 4,922/8,000
+[prostt5 09:50:14 +   333s] embedded 4,962/8,000
+[prostt5 09:50:15 +   334s] embedded 5,002/8,000
+[prostt5 09:50:16 +   335s] embedded 5,042/8,000
+[prostt5 09:50:17 +   336s] embedded 5,082/8,000
+[prostt5 09:50:18 +   337s] embedded 5,122/8,000
+[prostt5 09:50:19 +   338s] embedded 5,162/8,000
+[prostt5 09:50:20 +   339s] embedded 5,202/8,000
+[prostt5 09:50:21 +   341s] embedded 5,242/8,000
+[prostt5 09:50:22 +   341s] embedded 5,282/8,000
+[prostt5 09:50:23 +   342s] embedded 5,322/8,000
+[prostt5 09:50:24 +   344s] embedded 5,362/8,000
+[prostt5 09:50:26 +   345s] embedded 5,402/8,000
+[prostt5 09:50:27 +   346s] embedded 5,442/8,000
+[prostt5 09:50:28 +   347s] embedded 5,482/8,000
+[prostt5 09:50:29 +   348s] embedded 5,522/8,000
+[prostt5 09:50:30 +   349s] embedded 5,562/8,000
+[prostt5 09:50:31 +   351s] embedded 5,602/8,000
+[prostt5 09:50:32 +   352s] embedded 5,642/8,000
+[prostt5 09:50:34 +   353s] embedded 5,682/8,000
+[prostt5 09:50:35 +   354s] embedded 5,722/8,000
+[prostt5 09:50:36 +   355s] embedded 5,762/8,000
+[prostt5 09:50:37 +   356s] embedded 5,802/8,000
+[prostt5 09:50:38 +   357s] embedded 5,842/8,000
+[prostt5 09:50:39 +   358s] embedded 5,882/8,000
+[prostt5 09:50:40 +   359s] embedded 5,922/8,000
+[prostt5 09:50:41 +   360s] embedded 5,962/8,000
+[prostt5 09:50:42 +   361s] embedded 6,002/8,000
+[prostt5 09:50:43 +   362s] embedded 6,042/8,000
+[prostt5 09:50:44 +   363s] embedded 6,082/8,000
+[prostt5 09:50:45 +   364s] embedded 6,122/8,000
+[prostt5 09:50:46 +   365s] embedded 6,162/8,000
+[prostt5 09:50:47 +   366s] embedded 6,202/8,000
+[prostt5 09:50:48 +   367s] embedded 6,242/8,000
+[prostt5 09:50:49 +   368s] embedded 6,282/8,000
+[prostt5 09:50:50 +   369s] embedded 6,322/8,000
+[prostt5 09:50:51 +   370s] embedded 6,362/8,000
+[prostt5 09:50:52 +   371s] embedded 6,402/8,000
+[prostt5 09:50:53 +   372s] embedded 6,442/8,000
+[prostt5 09:50:54 +   373s] embedded 6,482/8,000
+[prostt5 09:50:55 +   374s] embedded 6,522/8,000
+[prostt5 09:50:57 +   376s] embedded 6,562/8,000
+[prostt5 09:50:58 +   377s] embedded 6,602/8,000
+[prostt5 09:50:59 +   378s] embedded 6,642/8,000
+[prostt5 09:51:00 +   379s] embedded 6,682/8,000
+[prostt5 09:51:01 +   380s] embedded 6,722/8,000
+[prostt5 09:51:02 +   381s] embedded 6,762/8,000
+[prostt5 09:51:03 +   382s] embedded 6,802/8,000
+[prostt5 09:51:04 +   383s] embedded 6,842/8,000
+[prostt5 09:51:05 +   384s] embedded 6,882/8,000
+[prostt5 09:51:07 +   386s] embedded 6,922/8,000
+[prostt5 09:51:08 +   387s] embedded 6,962/8,000
+[prostt5 09:51:09 +   388s] embedded 7,002/8,000
+[prostt5 09:51:10 +   389s] embedded 7,042/8,000
+[prostt5 09:51:11 +   390s] embedded 7,082/8,000
+[prostt5 09:51:13 +   392s] embedded 7,122/8,000
+[prostt5 09:51:14 +   393s] embedded 7,162/8,000
+[prostt5 09:51:15 +   394s] embedded 7,202/8,000
+[prostt5 09:51:16 +   395s] embedded 7,242/8,000
+[prostt5 09:51:16 +   395s] embedded 7,282/8,000
+[prostt5 09:51:17 +   396s] embedded 7,322/8,000
+[prostt5 09:51:18 +   397s] embedded 7,362/8,000
+[prostt5 09:51:20 +   399s] embedded 7,402/8,000
+[prostt5 09:51:21 +   400s] embedded 7,442/8,000
+[prostt5 09:51:22 +   401s] embedded 7,482/8,000
+[prostt5 09:51:23 +   402s] embedded 7,522/8,000
+[prostt5 09:51:24 +   403s] embedded 7,562/8,000
+[prostt5 09:51:25 +   404s] embedded 7,602/8,000
+[prostt5 09:51:26 +   405s] embedded 7,642/8,000
+[prostt5 09:51:27 +   406s] embedded 7,682/8,000
+[prostt5 09:51:28 +   407s] embedded 7,722/8,000
+[prostt5 09:51:29 +   409s] embedded 7,762/8,000
+[prostt5 09:51:30 +   410s] embedded 7,802/8,000
+[prostt5 09:51:32 +   411s] embedded 7,842/8,000
+[prostt5 09:51:33 +   412s] embedded 7,882/8,000
+[prostt5 09:51:34 +   413s] embedded 7,922/8,000
+[prostt5 09:51:35 +   414s] embedded 7,962/8,000
+[c2 09:51:37 +   416s] saved embeddings (1514, 1024) + (8000, 1024); disk free 9.0 GB
+Traceback (most recent call last):
+  File "/home/aj0486@students.ad.unt.edu/PFA/tracego/scripts/analysis_c2_structure.py", line 331, in <module>
+    main()
+  File "/home/aj0486@students.ad.unt.edu/PFA/tracego/scripts/analysis_c2_structure.py", line 143, in main
+    jacc = ia_jaccard(tv_vec(b.ids[qrow]), Y[tr_emb_rows[ti]], ia)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/aj0486@students.ad.unt.edu/PFA/tracego/scripts/analysis_c2_structure.py", line 29, in ia_jaccard
+    inter = (Ya > 0) & (Yb > 0)
+            ~~~~~~~~~^~~~~~~~~~
+TypeError: unsupported operand type(s) for &: 'numpy.ndarray' and 'csr_matrix'

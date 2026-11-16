@@ -1,0 +1,25 @@
+[base 04:36:16 +     0s] embeddings (165825, 480); references 112,983 (v2 train, T0 labels); TV queries 7,566
+[base 04:36:19 +     4s] DIAMOND kNN (repo, train refs): {'MF': 0.7433064846593107, 'BP': 0.6855377953339887, 'CC': 0.7745830597144515, 'mean': 0.7344757799025836, 'mean_testlike': 0.7168043328928242}
+[base 04:36:20 +     5s] cosine top-50 for TV in 0.7s; sim@1 p50 0.9985; sample: query Q8C228 -> ['Q5DTK1', 'Q9P2E5', 'A0A384NY44'] sims [0.9818999767303467, 0.9814000129699707, 0.9804999828338623]
+[base 04:36:21 +     6s] frozen-embedding kNN T=0.002 k=5: mean 0.6707 test-like 0.6483 (MF 0.7045 BP 0.6029 CC 0.7048)
+[base 04:36:23 +     8s] frozen-embedding kNN T=0.002 k=10: mean 0.6766 test-like 0.6536 (MF 0.7145 BP 0.6060 CC 0.7093)
+[base 04:36:26 +    11s] frozen-embedding kNN T=0.002 k=50: mean 0.6799 test-like 0.6582 (MF 0.7220 BP 0.6074 CC 0.7103)
+[base 04:36:27 +    12s] frozen-embedding kNN T=0.005 k=5: mean 0.6661 test-like 0.6360 (MF 0.7054 BP 0.5921 CC 0.7009)
+[base 04:36:29 +    14s] frozen-embedding kNN T=0.005 k=10: mean 0.6683 test-like 0.6373 (MF 0.7181 BP 0.5871 CC 0.6995)
+[base 04:36:37 +    22s] frozen-embedding kNN T=0.005 k=50: mean 0.6589 test-like 0.6269 (MF 0.7187 BP 0.5723 CC 0.6856)
+[base 04:36:38 +    23s] frozen-embedding kNN T=0.01 k=5: mean 0.6556 test-like 0.6179 (MF 0.7036 BP 0.5739 CC 0.6893)
+[base 04:36:41 +    26s] frozen-embedding kNN T=0.01 k=10: mean 0.6460 test-like 0.6124 (MF 0.7049 BP 0.5540 CC 0.6793)
+[base 04:36:51 +    36s] frozen-embedding kNN T=0.01 k=50: mean 0.6098 test-like 0.5720 (MF 0.6918 BP 0.4978 CC 0.6398)
+[base 04:36:52 +    37s] frozen-embedding kNN T=0.02 k=5: mean 0.6379 test-like 0.5983 (MF 0.6921 BP 0.5495 CC 0.6721)
+[base 04:36:55 +    40s] frozen-embedding kNN T=0.02 k=10: mean 0.6178 test-like 0.5820 (MF 0.6870 BP 0.5138 CC 0.6527)
+[base 04:37:06 +    51s] frozen-embedding kNN T=0.02 k=50: mean 0.5612 test-like 0.5226 (MF 0.6554 BP 0.4324 CC 0.5956)
+[base 04:37:07 +    52s] frozen-embedding kNN T=inf k=5: mean 0.6151 test-like 0.5775 (MF 0.6801 BP 0.5145 CC 0.6507)
+[base 04:37:10 +    55s] frozen-embedding kNN T=inf k=10: mean 0.5777 test-like 0.5498 (MF 0.6648 BP 0.4573 CC 0.6110)
+[base 04:37:21 +    66s] frozen-embedding kNN T=inf k=50: mean 0.5086 test-like 0.4798 (MF 0.6102 BP 0.3669 CC 0.5486)
+[base 04:37:24 +    69s] best frozen-embedding kNN on TV v2: T=0.002 k=50 test-like 0.6582; bins {'no_hit': (91, 0.395967833214761), '<30': (69, 0.4593013082595833), '30-50': (244, 0.46695092715074615), '50-80': (301, 0.49196876006736695), '80-95': (1634, 0.6564876288416709), '95-99.9': (2664, 0.7351553483731929), '100': (2563, 0.6806542259598557)}
+[base 04:37:30 +    75s]   probe epoch 0 loss 0.0211
+[base 04:38:15 +   120s]   probe epoch 10 loss 0.0179
+[base 04:39:01 +   166s]   probe epoch 20 loss 0.0174
+[base 04:39:42 +   207s]   probe epoch 29 loss 0.0171
+[base 04:39:50 +   215s] frozen mean-pool linear probe (146s): {'MF': 0.6339712280464948, 'BP': 0.3700068012273589, 'CC': 0.5406213717188111, 'mean': 0.5148664669975549, 'mean_testlike': 0.4819823062637128}
+[base 04:39:50 +   215s] wrote /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/baselines/frozen35m/tv_results.json

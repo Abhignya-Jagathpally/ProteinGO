@@ -1,0 +1,8 @@
+[evid 06:14:10 +    12s] residue codes (73491823, 64) loaded
+[evid 06:19:34 +   336s] train: 56,432 queries vs 112,983 references (t0 labels) in 324s; top-1 score p10/p50/p90 [0.2294, 0.6372, 0.9946]; vote nnz/query 548; sample E9Q6A7 -> ['A2A655', 'Q8CFX5', 'A0A8I6GLB4'] [0.9452000260353088, 0.9139999747276306, 0.9139000177383423]
+[evid 06:20:09 +   371s] tv: 7,566 queries vs 112,983 references (t0 labels) in 35s; top-1 score p10/p50/p90 [0.5, 0.9746, 1.0]; vote nnz/query 592; sample Q8C228 -> ['Q9P2E5', 'Q8IZ52', 'Q6IQX7'] [0.9397000074386597, 0.4876999855041504, 0.45210000872612]
+[evid 06:21:17 +   439s] val: 13,305 queries vs 133,054 references (full labels) in 68s; top-1 score p10/p50/p90 [0.2386, 0.7254, 0.9974]; vote nnz/query 535; sample Q8RXD3 -> ['Q9XI67', 'A1A601', 'Q9P0P0'] [0.31279999017715454, 0.29679998755455017, 0.28760001063346863]
+[evid 06:22:06 +   488s] test: 8,630 queries vs 133,054 references (full labels) in 48s; top-1 score p10/p50/p90 [0.3207, 0.9578, 1.0]; vote nnz/query 627; sample C0HLS4 -> ['P84919', 'Q8T0W8', 'Q5B334'] [0.3659000098705292, 0.3231000006198883, 0.3107999861240387]
+[evid 06:22:59 +   541s] fr24p: 11,231 queries vs 133,054 references (full labels) in 53s; top-1 score p10/p50/p90 [0.203, 0.4286, 0.9341]; vote nnz/query 479; sample A0A023UJQ9 -> ['Q9V8G0', 'O77150', 'P56173'] [0.33329999446868896, 0.3111000061035156, 0.310699999332428]
+[evid 06:22:59 +   541s] similarity-bin edges (24 quantile bins of training-query evidence): [0.1527, 0.2299, 0.3399, 0.6242, 0.9795]
+[evid 06:22:59 +   541s] wrote /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/full/enc_frozen35m_f1/evidence_ca.npz in 541s

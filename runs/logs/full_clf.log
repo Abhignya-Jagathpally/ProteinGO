@@ -1,0 +1,13 @@
+[clf 06:09:34 +     1s] classifier params 8.64M; inputs Z (16, 512) + vote over 7,901 terms
+[clf 06:09:47 +    15s] epoch 0 loss 0.0226 (11s); TV v2 vocab terms mean 0.7080 test-like 0.6916
+[clf 06:09:59 +    26s] epoch 1 loss 0.0205 (11s); TV v2 vocab terms mean 0.7091 test-like 0.6946
+[clf 06:10:11 +    39s] epoch 2 loss 0.0189 (12s); TV v2 vocab terms mean 0.7076 test-like 0.6868
+[clf 06:10:24 +    52s] epoch 3 loss 0.0180 (13s); TV v2 vocab terms mean 0.7054 test-like 0.6820
+[clf 06:10:36 +    64s] epoch 4 loss 0.0175 (12s); TV v2 vocab terms mean 0.7025 test-like 0.6763
+[clf 06:10:49 +    77s] epoch 5 loss 0.0172 (13s); TV v2 vocab terms mean 0.6984 test-like 0.6702
+[clf 06:11:02 +    90s] epoch 6 loss 0.0170 (13s); TV v2 vocab terms mean 0.6978 test-like 0.6696
+[clf 06:11:15 +   103s] epoch 7 loss 0.0168 (13s); TV v2 vocab terms mean 0.6959 test-like 0.6669
+[clf 06:11:15 +   103s] kept epoch 1 (TV v2 test-like 0.6946)
+[clf 06:11:22 +   110s] tv (with OOV copy): {'MF': 0.7471413619399083, 'BP': 0.6579055764155637, 'CC': 0.7490938496066057, 'mean': 0.7180469293206926, 'mean_testlike': 0.7039797983089953}
+[clf 06:11:31 +   119s] test (with OOV copy): {'MF': 0.7235354992680834, 'BP': 0.6325578737189128, 'CC': 0.7141208748342077, 'mean': 0.6900714159404013}
+[clf 06:11:44 +   132s] fr24p (with OOV copy): {'MF': 0.6035711532336453, 'BP': 0.2931197229155494, 'CC': 0.5715023297791236, 'mean': 0.4893977353094394}

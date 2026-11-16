@@ -1,0 +1,13 @@
+W1116 06:34:15.857000 1620410 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1116 06:34:15.891000 1620410 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+Loading weights:   0%|          | 0/190 [00:00<?, ?it/s]Loading weights: 100%|██████████| 190/190 [00:00<00:00, 9499.33it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+[pred 06:37:21 +   191s] tv readout step0: MF 0.4231 BP 0.2492 CC 0.4556 mean 0.3760 test-like 0.3667 (157s)
+[pred 06:37:39 +   209s] tv readout ccms: MF 0.4380 BP 0.2346 CC 0.4446 mean 0.3724 test-like 0.3529 (175s)
+[pred 06:37:56 +   226s] tv readout mix: MF 0.4295 BP 0.2527 CC 0.4566 mean 0.3796 test-like 0.3678 (192s)
+[pred 06:39:58 +   348s] test readout step0: MF 0.2338 BP 0.2327 CC 0.4465 mean 0.3044 (122s)
+[pred 06:40:18 +   368s] test readout ccms: MF 0.2829 BP 0.2013 CC 0.4359 mean 0.3067 (142s)
+[pred 06:40:38 +   388s] test readout mix: MF 0.2462 BP 0.2350 CC 0.4452 mean 0.3088 (161s)
+[pred 06:42:38 +   508s] fr24p readout step0: MF 0.2046 BP 0.1937 CC 0.3439 mean 0.2474 (120s)
+[pred 06:43:06 +   536s] fr24p readout ccms: MF 0.2444 BP 0.1748 CC 0.3643 mean 0.2612 (148s)
+[pred 06:43:31 +   561s] fr24p readout mix: MF 0.2082 BP 0.1992 CC 0.3432 mean 0.2502 (173s)

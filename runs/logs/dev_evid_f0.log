@@ -1,0 +1,5 @@
+[evid 04:58:53 +     2s] residue codes (13176731, 64) loaded
+[evid 04:59:23 +    32s] train: 10,019 queries vs 20,000 references (t0 labels) in 30s; top-1 score p10/p50/p90 [0.8276, 0.8904, 0.9759]; vote nnz/query 671; sample Q61468 -> ['Q8K561', 'A1L378', 'Q7RTW8'] [0.8618999719619751, 0.8537999987602234, 0.8476999998092651]
+[evid 04:59:45 +    55s] tv: 7,566 queries vs 20,000 references (t0 labels) in 22s; top-1 score p10/p50/p90 [0.8391, 0.9153, 0.994]; vote nnz/query 711; sample Q8C228 -> ['Q8IZ52', 'Q9NS00', 'F5GUA1'] [0.8889999985694885, 0.8623999953269958, 0.8579999804496765]
+[evid 04:59:45 +    55s] similarity-bin edges (24 quantile bins of training-query evidence): [0.7668, 0.8315, 0.8611, 0.8945, 0.9437]
+[evid 04:59:45 +    55s] wrote /home/aj0486@students.ad.unt.edu/PFA/tracego/runs/dev20k/enc_lora35m_f0/evidence_rr.npz in 55s
